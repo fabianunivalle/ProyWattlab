@@ -40,5 +40,4 @@ class LoginUser(generics.GenericAPIView):
              "user": UserSerializer(user).data, 
              "token": token[1]
             }, status= status.HTTP_201_CREATED)
-        
-        
+

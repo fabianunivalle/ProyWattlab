@@ -1,14 +1,15 @@
 import React from 'react'
-
 import { useTranslation } from 'react-i18next';
 
-function CardOpt(props) {
 
- const{urlRuta, modulo, d, d1, d2, color, icono, informacion} = props;
- const i18n = useTranslation();
+function CardOpt(props) {
+    
+    const i18n = useTranslation();
+    const{urlRuta, modulo, d, d1, d2, color, icono, informacion, goto} = props;
+ 
     return(
         <div className="col-lg-3 col-sm-6 col-xs-12" style={{textAlign: "center", cursor: "pointer"}}>
-            <div className="card" style={{width: "230px", marginTop: "10px", marginRight: "10px"}} onClick={() => window.location = urlRuta}>
+            <div className="card" style={{width: "230px", marginTop: "10px", marginRight: "10px"}} onClick={() => goto(urlRuta)}>
                 <div style={{textAlign: "center", marginTop: "0", backgroundColor: color, height:"120px"}}>
                     <div style={{marginTop: "20px", marginBottom: "20px"}}>
                     <svg fill="black" className={icono} width="80px" height="80px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +26,6 @@ function CardOpt(props) {
             </div>
         </div>
      )
-    
 }
 
 export default CardOpt;

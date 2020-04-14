@@ -13,11 +13,9 @@ class ModuloAdministrador extends Component {
                 <div className="container" style={{marginTop: "20px", marginBottom: "20px"}}>
                     <Inicio/>
                 </div>
-            </Layout>
-            
+            </Layout>       
         );
     }
-
 }
 
 export default ModuloAdministrador;

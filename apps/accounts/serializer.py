@@ -46,7 +46,8 @@ class LoginSerializer(serializers.Serializer):
         user = authenticate(**data)
         if user is not None and user.is_active: 
            return user
-        else: serializers.ValidationError("Incorrectos")
+        else: 
+            raise serializers.ValidationError("Credendiales incorrectas o inactivo")
         
 
     

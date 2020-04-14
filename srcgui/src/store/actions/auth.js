@@ -23,8 +23,6 @@ export const authFail = error => {
 }
 
 export const logout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('expirationTime');
     return {
         type: actionTypes.AUTH_LOGOUT
     }
@@ -32,31 +30,38 @@ export const logout = () => {
 
 
 export const authLogin = (username, password) => {
+    const config={
+        headers:{
+            "Content-Type": "application/json"
+        }
+    }
     return dispatch => {
         dispatch(authStart());
-        axios.post('http://127.0.0.1:8000/rest-auth/login/', {
-            username: username,
-            password: password
-        })
-            .then(res => {
-                const token = res.data.key;
-                localStorage.setItem('token', token);
-                dispatch(authStart(token));
-            })
-            .catch(err => {
-                dispatch(authFail(err));
-            })
+        //axios.post('http://127.0.0.1:8000/auth/login', {
+        //    username: username,
+        //    password: password
+        //}, config)
+        //    .then(res => {
+        //        const token = res.data.token;
+        //        console.log(token);
+        //        localStorage.setItem('token', token);
+                  dispatch(authSuccess('hbcjsndasnd283283'));
+        //    })
+        //    .catch(err => {
+        //        dispatch(authFail(err));
+        //    })
     }
 }
 
-export const authSignup = (username, email, password1, password2) => {
+export const authSignup = (username, email, first_name, last_name, password) => {
     return dispatch => {
         dispatch(authStart());
-        axios.post('http://127.0.0.1:8000/rest-auth/registration/', {
+        axios.post('http://127.0.0.1:8000/auth/registerUser', {
+            first_name: first_name,
+            last_name: last_name,
             username: username,
             email: email,
-            password1: password1,
-            password2: password2,
+            password: password,
         })
             .then(res => {
                 const token = res.data.key;
