@@ -1,7 +1,8 @@
 import React, { Component } from 'react'; 
-import Sidebar from './Sidebar';
 import { Layout } from 'antd';
-import Inicio from './Inicio';
+
+import Sidebar from '../componentes/Sidebar';
+import Inicio from '../componentes/Inicio';
   
 class ModuloAdministrador extends Component {   
     render() {     

@@ -11,7 +11,7 @@ import MenuInicio from './container/MenuInicio';
 import Login from './componentes/Login';
 import PQRS from './componentes/PQRS';
 import ConsultaFactura from './componentes/ConsultaFactura';
-import ModuloAdministrador from './componentes/ModuloAdministrador';
+import ModuloAdministrador from './container/ModuloAdministrador';
 import MADashboard from './container/MADashboard';
 import MAUsers from './container/MAUsers';
 import MATransformadores from './container/MATransformadores';

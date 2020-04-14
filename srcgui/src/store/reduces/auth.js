@@ -6,7 +6,7 @@ const initialState ={
     token:null, 
     error: null,
     loading: false, 
-    autheticate: false
+    authenticate: false
 }
 
 
@@ -22,7 +22,7 @@ const authSuccess = (state, action) => {
         token: action.token,
         error: null,
         loading: false,
-        autheticate: true
+        authenticate: true
     });
 }
 
@@ -36,7 +36,7 @@ const authFail = (state, action) => {
 const authLogout = (state, action) => {
     return updateObject(state, {
         token: null, 
-        autheticate: false
+        autheticate: false 
     });
 }
 

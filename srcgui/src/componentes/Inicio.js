@@ -6,12 +6,8 @@ import { useTranslation } from 'react-i18next';
 import CardOpt from './CardOpt';
 import Encabezado from './Encabezado';
 
-function Inicio(props) {
-  
+function Inicio() {
   const i18n = useTranslation();
-  const goto = (path) => {
-    props.history.push(path);
-  }
 
   return (
     <div className="container-fluid" style={{ textAlign: "center", backgroundColor: "white", position: "absolute", top: "70px", left: "0px" }}>
@@ -21,7 +17,6 @@ function Inicio(props) {
       <div className="container">
         <div className="row justify-content-lg-center justify-content-md-center">
           <CardOpt
-            goto={goto}
             modulo="Usuarios"
             urlRuta="/ModuloAdministrador/Users"
             color="#3298d1"
@@ -30,7 +25,6 @@ function Inicio(props) {
             informacion="Adicionar, editar y consultar usuarios" />
 
           <CardOpt
-            goto={goto}
             modulo="Transformadores"
             urlRuta="/ModuloAdministrador/Transformadores"
             color="#32d156"
@@ -39,7 +33,6 @@ function Inicio(props) {
             informacion="Ubicación de los transformadores" />
 
           <CardOpt
-            goto={goto}
             modulo="Reportes"
             urlRuta="/ModuloAdministrador/Reportes"
             color="#eabf2e"
@@ -50,7 +43,6 @@ function Inicio(props) {
             informacion="Reporte de ingresos de la empresa" />
 
           <CardOpt
-            goto={goto}
             modulo="Pagos"
             urlRuta="/ModuloAdministrador/Pagos"
             color="#ea2e2e"
@@ -65,10 +57,4 @@ function Inicio(props) {
 }
 
 
-const mapStateToProps = (state) => {
-  return {
-    auth: state.reducer
-  }
-};
-
-export default withRouter(connect(mapStateToProps)(Inicio));
+export default Inicio;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useTranslation } from 'react-i18next';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../store/actions/auth';
 
@@ -37,6 +37,10 @@ const handleFormSubmit = (e, props) => { //ENVIO DE DATOS  AL BACK
 function Login(props) {
     const i18n = useTranslation();
 
+    if ( props.auth.authenticate ){
+        return (<Redirect to="/ModuloAdministrador" />)
+    }
+        
     return (
         <Layout className="layout">
             <div>
@@ -93,13 +97,13 @@ function Login(props) {
     );
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state=> {
     return {
         auth: state.reducer
     }
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
     return {
         onAuth(username, password) {
             dispatch(actions.authLogin(username, password))

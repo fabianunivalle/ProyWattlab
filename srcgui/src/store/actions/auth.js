@@ -22,7 +22,7 @@ export const authFail = error => {
     }
 }
 
-export const logout = () => {
+export const authlogout = () => {
     return {
         type: actionTypes.AUTH_LOGOUT
     }
@@ -45,6 +45,7 @@ export const authLogin = (username, password) => {
         //        const token = res.data.token;
         //        console.log(token);
         //        localStorage.setItem('token', token);
+        //        localStorage.setItem('authenticate', true);
                   dispatch(authSuccess('hbcjsndasnd283283'));
         //    })
         //    .catch(err => {
