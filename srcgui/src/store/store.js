@@ -35,7 +35,11 @@ function loadFromLocalStorage(){
 const persistedState = loadFromLocalStorage()
 
 const reduc = combineReducers({
-     reducer
+     reducer, 
+     token: (state = {}) => state,
+     error: (state = {}) => state,
+     loading: (state = {}) => state,
+     authenticate: (state = {}) => state
 });
 
 const store = createStore(
