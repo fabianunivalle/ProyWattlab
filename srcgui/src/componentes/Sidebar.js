@@ -128,14 +128,18 @@ function Sidebar(props) {
 
   );
 }
-
-
-const mapDispatchToProps = dispatch => {
+const mapStateToProps = state => {
   return {
-    authlogout() {
-      dispatch(actions.authlogout())
-    }
+    auth: state.reducer
   }
 };
 
-export default connect(mapDispatchToProps)(Sidebar);
+const mapDispatchToProps = dispatch => {
+  return {
+      authlogout() {
+        dispatch(actions.authlogout())
+      }
+  }
+};
+
+export default connect(mapStateToProps,mapDispatchToProps)(Sidebar);
