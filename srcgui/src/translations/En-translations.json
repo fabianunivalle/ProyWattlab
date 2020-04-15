@@ -43,6 +43,22 @@
             "service_portal": "Service portal",
             "service_portal_text": "Here the services we offer",
             "products_and_services": "Products and services",
-            "prices": "Prices"
+            "prices": "Prices",
+            "home": "Home",
+            "users": "Users",
+            "users_description": "Add, edit and consult users",
+            "actives": "Actives",
+            "actives_description": "Transformer location",
+            "reports": "Reports",
+            "reports_description": "Company income report",
+            "payments": "Payments",
+            "payments_description": "Registration of customer service payments",
+            "settings": "Settings",
+            "change": "Change",
+            "inactivate": "Inactivate",
+            "administration_panel": "Administration panel",
+            "administration_panel_description": "Then select one of the following options",
+            "users_panel": "Users panel",
+            "users_panel_description": "Below you will find the list of users"
       }
 }

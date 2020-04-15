@@ -34,7 +34,7 @@
             "pqrs_subject":"Assunto",
             "pqrs_email":"Correio eletrônico",
             "pqrs_description":"Descrição",
-            "send_button": "Enviar",
+            "send_button": "Mandar",
             "language": "Linguagem",
             "spanish": "Espanhol",
             "english": "Inglês",
@@ -43,6 +43,22 @@
             "service_portal": "Portal de serviço",
             "service_portal_text": "Aqui os serviços que oferecemos",
             "products_and_services": "Produtos e serviços",
-            "prices": "Preços"
+            "prices": "Preços",
+            "home": "Casa",
+            "users": "Usuários",
+            "users_description": "Adicionar, editar e consultar usuários",
+            "actives": "Ativos",
+            "actives_description": "Localização do transformador",
+            "reports": "Relatórios",
+            "reports_description": "Relatório de receita da empresa",
+            "payments": "Pagamentos",
+            "payments_description": "Registro de pagamentos de atendimento ao cliente",
+            "settings": "Configuração",
+            "change": "Modificar",
+            "inactivate": "Inativar",
+            "administration_panel": "Painel do administrador",
+            "administration_panel_description": "Em seguida, selecione uma das seguintes opções",
+            "users_panel": "Painel Usuários",
+            "users_panel_description": "Abaixo você encontrará a lista de usuários"
       }
 }

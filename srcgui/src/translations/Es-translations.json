@@ -43,6 +43,22 @@
             "service_portal": "Portal de servicios",
             "service_portal_text": "Aquí los servicios que ofrecemos",
             "products_and_services": "Productos y servicios",
-            "prices": "Precios"
+            "prices": "Precios",
+            "home": "Inicio",
+            "users": "Usuarios",
+            "users_description": "Adicionar, editar y consultar usuarios",
+            "actives": "Activos",
+            "actives_description": "Ubicación de los transformadores",
+            "reports": "Reportes",
+            "reports_description": "Reporte de ingresos de la empresa",
+            "payments": "Pagos",
+            "payments_description": "Registro de pago de servicios por clientes",
+            "settings": "Configuración",
+            "change": "Modificar",
+            "inactivate": "Inactivar",
+            "administration_panel": "Panel de administración",
+            "administration_panel_description": "A continuación, seleccione una de las siguientes opciones",
+            "users_panel": "Panel de usuarios",
+            "users_panel_description": "A continuación, encontrará el listado de usuarios"
       }
 }
