@@ -10,6 +10,9 @@ import ModuloAdministrador from './componentes/ModuloAdministrador';
 import MADashboard from './container/MADashboard';
 import MAUsers from './container/MAUsers';
 import MATransformadores from './container/MATransformadores';
+import MAReportes from './container/MAReportes';
+import MAPagos from './container/MAPagos';
+import MAConfiguracion from './container/MAConfiguracion';
 
 function BaseRouter() {
     return (
@@ -24,6 +27,9 @@ function BaseRouter() {
                     <Route exact path="/ModuloAdministrador/Dashboard" component={MADashboard} />
                     <Route exact path="/ModuloAdministrador/Users" component={MAUsers} />
                     <Route exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
+                    <Route exact path="/ModuloAdministrador/Reportes" component={MAReportes} />
+                    <Route exact path="/ModuloAdministrador/Pagos" component={MAPagos} />
+                    <Route exact path="/ModuloAdministrador/Configuracion" component={MAConfiguracion} />
                     <Route exact path="/Login" component={Login} />
                 </Switch>
             </BrowserRouter>

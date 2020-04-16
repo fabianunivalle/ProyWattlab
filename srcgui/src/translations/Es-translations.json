@@ -1,5 +1,15 @@
 {
       "translation": {
+            "slide1_title": "Energía eléctrica",
+            "slide1_text": "De pura CALIDAD.",
+            "slide2_title": "PARA TODOS LOS CALEÑOS",
+            "slide2_text": "Próximamente...",
+            "slide3_title": "Próximamente...",
+            "slide3_text": "Próximamente...",
+            "news_title": "Noticias y novedades",
+            "news_text": "Aquí va la sección de noticias",
+            "services_title1": "Pensamos en tu comodidad",
+            "services_title2": "Encuentra aquí todos nuestros servicios y transacciones en línea.",
             "login": "Iniciar sesión",
             "login_document":"Número de documento",
             "login_password":"Contraseña",
@@ -33,6 +43,22 @@
             "service_portal": "Portal de servicios",
             "service_portal_text": "Aquí los servicios que ofrecemos",
             "products_and_services": "Productos y servicios",
-            "prices": "Precios"
+            "prices": "Precios",
+            "home": "Inicio",
+            "users": "Usuarios",
+            "users_description": "Adicionar, editar y consultar usuarios",
+            "actives": "Activos",
+            "actives_description": "Ubicación de los transformadores",
+            "reports": "Reportes",
+            "reports_description": "Reporte de ingresos de la empresa",
+            "payments": "Pagos",
+            "payments_description": "Registro de pago de servicios por clientes",
+            "settings": "Configuración",
+            "change": "Modificar",
+            "inactivate": "Inactivar",
+            "administration_panel": "Panel de administración",
+            "administration_panel_description": "A continuación, seleccione una de las siguientes opciones",
+            "users_panel": "Panel de usuarios",
+            "users_panel_description": "A continuación, encontrará el listado de usuarios"
       }
 }

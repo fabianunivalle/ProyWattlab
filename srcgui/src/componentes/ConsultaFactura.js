@@ -6,7 +6,7 @@ import Footer from './Footer';
 class ConsultaFactura extends React.Component {
     render() {
         return (
-            <Layout className="layout">
+            <Layout className="layout" style={{backgroundColor: "white"}}>
                 <div>
                     <Menu/>
                 </div>
