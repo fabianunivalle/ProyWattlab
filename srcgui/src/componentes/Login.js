@@ -1,18 +1,19 @@
 import React from 'react';
+
 import { useTranslation } from 'react-i18next';
-import { Layout } from 'antd';
+import { withRouter, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from '../store/actions/auth';
 
 import Footer from './Footer';
 import Menu from './Menu';
 import Recaptcha from 'react-recaptcha';
 import './style/recaptcha.css';
-
-import { connect } from 'react-redux';
-import * as actions from '../store/actions/auth';
-
-let valido;
+import { Layout } from 'antd';
 
 //FUNCIONES DEL CAPTCHA
+let valido;
+
 var callback = function () {
     console.log('Done!');
 };
@@ -21,12 +22,12 @@ var verifyCallback = function (response) {
     valido = response;
 };
 
-const handleFormSubmit = (e, onAuth) => {
+const handleFormSubmit = (e, props) => { //ENVIO DE DATOS  AL BACK
     e.preventDefault();
-
     if (valido != null) {
-        window.location = "/ModuloAdministrador";
-        //onAuth(e.target.elements.password.value);
+
+        props.onAuth(e.target.elements.username.value, e.target.elements.password.value);
+        props.history.push("/ModuloAdministrador"); //Ruta a la cual me redigira si el login es verdadero
     } else {
         alert("Debes confirmar el captcha antes de iniciar sesión.")
     }
@@ -36,6 +37,10 @@ const handleFormSubmit = (e, onAuth) => {
 function Login(props) {
     const i18n = useTranslation();
 
+    if ( props.auth.authenticate ){
+        return (<Redirect to="/ModuloAdministrador" />)
+    }
+        
     return (
         <Layout className="layout">
             <div>
@@ -49,18 +54,18 @@ function Login(props) {
                     </div>
                     <div className="col-lg-5">
                         <div className="container" style={{ marginTop: 80, marginBottom: 70, textAlign: "center" }}>
-                            <form onSubmit={(event) => handleFormSubmit(event, props.onAuth)} style={{ marginTop: '20px' }}>
+                            <form onSubmit={(event) => handleFormSubmit(event, props)} style={{ marginTop: '20px' }}>
                                 <div>
                                     <h1>WATTLAB</h1>
                                     <p>{i18n.t('info_login')}</p>
                                 </div>
 
                                 <div className="form-group">
-                                    <input name="username" className="form-control" placeholder={i18n.t('login_document')}></input>
+                                    <input name="username" className="form-control" placeholder={i18n.t('login_document')} ></input>
                                 </div>
 
                                 <div className="form-group">
-                                    <input name="password" type="password" className="form-control" placeholder={i18n.t('login_password')}></input>
+                                    <input name="password" type="password" className="form-control" placeholder={i18n.t('login_password')} ></input>
                                 </div>
 
                                 <div className="recaptcha ">
@@ -92,12 +97,11 @@ function Login(props) {
     );
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = state=> {
     return {
-        loading: state.auth.loading,
-        error: state.auth.error
+        auth: state.reducer
     }
-}
+};
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -105,6 +109,6 @@ const mapDispatchToProps = dispatch => {
             dispatch(actions.authLogin(username, password))
         }
     }
-}
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login));

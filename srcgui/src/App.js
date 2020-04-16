@@ -1,20 +1,16 @@
 import React, { Component, Fragment } from 'react';
 import 'antd/dist/antd.css';
 
-import { Provider } from 'react-redux';
-import store from './store/store';
 import BaseRouter from './routes';
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      <div>
         <Fragment>
-          <div>
-            <BaseRouter />
-          </div>
+          <BaseRouter />
         </Fragment>
-      </Provider>
+      </div>
     );
   }
 }

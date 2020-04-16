@@ -26,10 +26,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST= "smtp.gmail.com"
-EMAIL_HOST_USER= "Tu_email@gmail.com"
-EMAIL_HOST_PASSWORD="Tamayo0327"
+EMAIL_HOST= 'smtp.googlemail.com'
 EMAIL_PORT= 587
+EMAIL_HOST_USER= 'wattlab2711@gmail.com'
+EMAIL_HOST_PASSWORD='Patsi2711'
 EMAIL_USE_TLS= True
 
 
@@ -43,10 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-     'corsheaders',
-     'rest_framework',
-     
-     'apps.publicidad',
+    'corsheaders',
+    'rest_framework',
+    'knox',
+    
+    'apps.publicidad',
+    'apps.accounts',
+
 ]
 
 MIDDLEWARE = [
@@ -134,9 +137,11 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'knox.auth.TokenAuthentication',),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
-    )
+    ) 
 }
 
 CORS_ORIGIN_ALLOW_ALL= True

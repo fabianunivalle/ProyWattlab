@@ -9,8 +9,9 @@ const handleFormSubmit = e => {
     e.preventDefault();
 
     axios.post('http://127.0.0.1:8000/api/pqrs/', {
-        "titulo": e.target.elements.asunto.value,
-        "contenido": e.target.elements.contenido.value + " EMAIL CONTACTO: " + e.target.elements.email.value ,
+        "asunto": e.target.elements.asunto.value,
+        "contenido": e.target.elements.contenido.value, 
+        "email": e.target.elements.email.value
     })  
         .then(res => console.log(res.data))
         .catch(error => console.log(error))

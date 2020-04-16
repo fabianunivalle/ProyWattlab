@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { useTranslation } from 'react-i18next';
+
 import CardOpt from './CardOpt';
 import Encabezado from './Encabezado';
 
@@ -52,5 +52,6 @@ function Inicio() {
        </div>
     )
 }
+
 
 export default Inicio;

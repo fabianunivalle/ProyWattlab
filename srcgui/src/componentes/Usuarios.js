@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Encabezado from './Encabezado';
 import BotonModificar from './BotonModificar';
 import BotonInactivar from './BotonInactivar';
