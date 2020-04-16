@@ -15,6 +15,9 @@ import ModuloAdministrador from './container/ModuloAdministrador';
 import MADashboard from './container/MADashboard';
 import MAUsers from './container/MAUsers';
 import MATransformadores from './container/MATransformadores';
+import MAReportes from './container/MAReportes';
+import MAPagos from './container/MAPagos';
+import MAConfiguracion from './container/MAConfiguracion';
 
 function BaseRouter() {
     return (
@@ -30,6 +33,9 @@ function BaseRouter() {
                         <PrivateRoute exact path="/ModuloAdministrador/Dashboard" component={MADashboard} />
                         <PrivateRoute exact path="/ModuloAdministrador/Users" component={MAUsers} />
                         <PrivateRoute exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
+                        <PrivateRoute exact path="/ModuloAdministrador/Reportes" component={MAReportes} />
+                        <PrivateRoute exact path="/ModuloAdministrador/Pagos" component={MAPagos} />
+                        <PrivateRoute exact path="/ModuloAdministrador/Configuracion" component={MAConfiguracion} />
                         <Route exact path="/Login" component={Login} />
                     </Switch>
                 </BrowserRouter>

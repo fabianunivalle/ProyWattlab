@@ -1,5 +1,15 @@
 {
       "translation": {
+            "slide1_title": "Electric power",
+            "slide1_text": "Of pure QUALITY.",
+            "slide2_title": "FOR ALL CALEÑOS",
+            "slide2_text": "Coming soon...",
+            "slide3_title": "Coming soon...",
+            "slide3_text": "Coming soon...",
+            "news_title": "News and updates",
+            "news_text": "Here goes the news section",
+            "services_title1": "We think about your comfort",
+            "services_title2": "Find here all our services and online transactions.",
             "login": "Log in",
             "login_document":"ID number",
             "login_password":"Password",
@@ -33,6 +43,22 @@
             "service_portal": "Service portal",
             "service_portal_text": "Here the services we offer",
             "products_and_services": "Products and services",
-            "prices": "Prices"
+            "prices": "Prices",
+            "home": "Home",
+            "users": "Users",
+            "users_description": "Add, edit and consult users",
+            "actives": "Actives",
+            "actives_description": "Transformer location",
+            "reports": "Reports",
+            "reports_description": "Company income report",
+            "payments": "Payments",
+            "payments_description": "Registration of customer service payments",
+            "settings": "Settings",
+            "change": "Change",
+            "inactivate": "Inactivate",
+            "administration_panel": "Administration panel",
+            "administration_panel_description": "Then select one of the following options",
+            "users_panel": "Users panel",
+            "users_panel_description": "Below you will find the list of users"
       }
 }

@@ -5,6 +5,7 @@ import Menu from '../componentes/Menu.js';
 ///PARA DISEÑO 
 import { Layout } from 'antd';
 import Footer from '../componentes/Footer.js';
+import Noticias from './Noticias.js';
 const { Content } = Layout;
 
 class MenuInicio extends Component {
@@ -17,13 +18,17 @@ class MenuInicio extends Component {
                 </div>
 
                 <div>
-                    <Content style={{ padding: '10px 30px', marginTop: 70 }}>
+                    <Content style={{ padding: '0 auto', marginTop: '70px' }}>
                         <Slides />
                     </Content>
                 </div>
 
                 <div>
                     <Servicio />
+                </div>
+
+                <div>
+                    <Noticias/>
                 </div>
 
                 <div>

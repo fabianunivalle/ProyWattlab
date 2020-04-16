@@ -4,17 +4,28 @@ import { useTranslation } from 'react-i18next';
 
 function Card(props) {
 
- const{img, titulo, descripcion, urlRuta} = props;
+ const{titulo, descripcion, urlRuta, d1, d2, d3, d4} = props;
  const i18n = useTranslation();
-    return(
-      <div className="col-lg-4">
-         <img className="bd-placeholder-img rounded-circle" src={img} width="200" height="190" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"></img>
-          <h2>{i18n.t(titulo)}</h2>
-          <p>{i18n.t(descripcion)}</p>
-          <p><a className="btn btn-success" href="#" role="button" onClick={() => window.location = urlRuta}> {i18n.t('click_here')} &raquo;</a></p>
-       </div>
+
+   return(
+      <div className="col-lg-4 col-sm-4">
+         <div className="card">
+            <div className="card-body">
+               <div style={{marginBottom: "10px"}}>
+                  <svg className="bi bi-file-earmark-arrow-down" width="50px" height="50px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path d={d1}/>
+                     <path d={d2}/>
+                     <path fill-rule="evenodd" d={d3} clip-rule="evenodd"/>
+                     <path fill-rule="evenodd" d={d4} clip-rule="evenodd"/>
+                  </svg>
+               </div>
+               <h5 className="card-title">{i18n.t(titulo)}</h5>
+               <p className="card-text">{i18n.t(descripcion)}</p>
+               <a className="btn btn-success" href="#" role="button" onClick={() => window.location = urlRuta}> {i18n.t('click_here')} &raquo;</a>
+            </div>
+         </div>
+      </div>
      )
-    
 }
 
 export default Card;
