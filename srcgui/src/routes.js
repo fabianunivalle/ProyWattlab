@@ -10,6 +10,8 @@ import ModuloAdministrador from './componentes/ModuloAdministrador';
 import MADashboard from './container/MADashboard';
 import MAUsers from './container/MAUsers';
 import MATransformadores from './container/MATransformadores';
+import MAPublicidad from './container/MAPublicidad';
+import ModificarPub from './componentes/ModificarPub';
 
 function BaseRouter() {
     return (
@@ -25,6 +27,8 @@ function BaseRouter() {
                     <Route exact path="/ModuloAdministrador/Users" component={MAUsers} />
                     <Route exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
                     <Route exact path="/Login" component={Login} />
+                    <Route exact path="/ModuloAdministrador/Publicidad" component={MAPublicidad} />
+                    <Route exact path="/ModuloAdministrador/Publicidad/Modificar" component={ModificarPub} />
                 </Switch>
             </BrowserRouter>
         </div>
