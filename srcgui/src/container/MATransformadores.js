@@ -3,11 +3,64 @@ import Sidebar from '../componentes/Sidebar';
 import { Layout } from 'antd';
 import Maps from '../componentes/Maps'
 import Transformador from '../componentes/Transformador';
+import Subestacion from '../componentes/Subestacion';
 
 
 
 class MATransformadores extends Component {
     
+    constructor(props) {
+        super(props);
+        this.state = {mode:'trans'};
+        this.handleChange = this.handleChange.bind(this);
+        this.handleTrans = this.handleTrans.bind(this);
+        this.handleSub = this.handleSub.bind(this);
+      }
+      
+      handleChange(e) {
+        this.setState({ inputText: e.target.value });
+      }
+      
+      handleTrans() {
+        this.setState({mode: 'trans'});
+      }
+    
+      handleSub() {
+        this.setState({mode: 'sub'});
+      }
+      
+      renderInputSelection() {
+        if(this.state.mode === 'trans') {
+          return <div>
+              <Layout style={{backgroundColor: "white"}}>
+                  <Transformador/>
+              </Layout>
+          </div>;
+        } else {
+          return (
+              <div>
+                <Subestacion/>
+              </div>
+          );
+        }
+      }
+      
+      renderButton() {
+        if(this.state.mode === 'trans') {
+          return (
+              <button textAlign="center" className="btn btn-success" onClick={this.handleSub}>
+                Subestacion
+              </button>
+          );
+        } else {
+          return (
+              <button className="btn btn-success" onClick={this.handleTrans}>
+                Transformador
+              </button>
+          );
+        }
+      }
+
     render() {
         
         return (
@@ -32,20 +85,14 @@ class MATransformadores extends Component {
                                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                             <input style={{textAlign: "center"}} type="text" readOnly className="form-control-plaintext" id="staticEmail2" value="¿Qué desea añadir?"></input>
                                         </div>
-                                        <div className="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-                                            <select className="form-control" id="exampleFormControlSelect1" style={{marginBottom: "10px"}}>
-                                                <option>Transformador</option>
-                                                <option>Subestación</option>
-                                            </select>
-                                        </div>
-                                        <div className="col-lg-2 col-md-2 col-sm-6 col-xs-6" style={{display: "auto"}}>
-                                            <button className="btn btn-success" type="button">Aceptar</button>
+                                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{justifyContent: "center"}}>
+                                            {this.renderButton()}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <Transformador/>
+                                {this.renderInputSelection()}
                             </div>
                         </div>
                     </div>
