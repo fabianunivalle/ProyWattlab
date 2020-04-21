@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     
     'corsheaders',
     'rest_framework',
-    'knox',
+    'rest_framework.authtoken',
     
     'apps.publicidad',
     'apps.accounts',
@@ -137,8 +137,6 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'knox.auth.TokenAuthentication',),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
     ) 
