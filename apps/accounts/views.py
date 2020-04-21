@@ -26,7 +26,8 @@ class LoginUserView(ObtainAuthToken):
             'token': token.key, 
             'user': user_serializer.data
         }, status= status.HTTP_200_OK)
-        
+
+
 
 
 

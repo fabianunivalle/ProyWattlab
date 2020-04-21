@@ -20,11 +20,8 @@ class UserSerializer(serializers.ModelSerializer):
     
     class Meta: 
         model= User
-        fields = ('id', 'username', 'first_name', 'last_name','email','password','profile')
-        extra_kwargs = {'password': {"write_only": True, 'required': True}, 
-                        'first_name': {"write_only": True, 'required': True}, 
-                        'last_name': {"write_only": True, 'required': True},
-                        'email': {"write_only": True, 'required': True}}
+        fields = ('id', 'username', 'first_name', 'last_name','email','password','is_active','profile')
+        extra_kwargs = {'password': {"write_only": True, 'required': True}}
     
     @transaction.atomic
     def create(self, validated_data):
@@ -36,17 +33,7 @@ class UserSerializer(serializers.ModelSerializer):
         
         return user 
         
-#Login user         
-""" class LoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    password= serializers.CharField()
-    
-    def validate(self, data): 
-        user = authenticate(**data)
-        if user is not None and user.is_active: 
-           return user
-        else: 
-            raise serializers.ValidationError("Credendiales incorrectas o inactivo") """
+
         
 
     
