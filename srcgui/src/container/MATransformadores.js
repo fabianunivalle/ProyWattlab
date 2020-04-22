@@ -31,14 +31,14 @@ class MATransformadores extends Component {
       
       renderInputSelection() {
         if(this.state.mode === 'trans') {
-          return <div>
+          return <div style={{marginBottom: "20px"}}>
               <Layout style={{backgroundColor: "white"}}>
                   <Transformador/>
               </Layout>
           </div>;
         } else {
           return (
-              <div>
+              <div style={{marginBottom: "20px"}}>
                 <Subestacion/>
               </div>
           );
