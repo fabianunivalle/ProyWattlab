@@ -18,28 +18,27 @@ import MATransformadores from './container/MATransformadores';
 import MAReportes from './container/MAReportes';
 import MAPagos from './container/MAPagos';
 import MAConfiguracion from './container/MAConfiguracion';
+import MAPublicidad from './container/MAPublicidad';
+import ModificarPub from './componentes/ModificarPub';
 
 function BaseRouter() {
     return (
         <div>
-            <Provider store={store}>
-                <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/" component={MenuInicio} />
-                        <Route exact path="/InformacionServicios" component={InformacionServicios} />
-                        <Route exact path="/PQRS" component={PQRS} />
-                        <Route exact path="/ConsultaFactura" component={ConsultaFactura} />
-                        <PrivateRoute exact path="/ModuloAdministrador" component={ModuloAdministrador} />
-                        <PrivateRoute exact path="/ModuloAdministrador/Dashboard" component={MADashboard} />
-                        <PrivateRoute exact path="/ModuloAdministrador/Users" component={MAUsers} />
-                        <PrivateRoute exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
-                        <PrivateRoute exact path="/ModuloAdministrador/Reportes" component={MAReportes} />
-                        <PrivateRoute exact path="/ModuloAdministrador/Pagos" component={MAPagos} />
-                        <PrivateRoute exact path="/ModuloAdministrador/Configuracion" component={MAConfiguracion} />
-                        <Route exact path="/Login" component={Login} />
-                    </Switch>
-                </BrowserRouter>
-            </Provider>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={MenuInicio} />
+                    <Route exact path="/InformacionServicios" component={InformacionServicios} />
+                    <Route exact path="/PQRS" component={PQRS} />
+                    <Route exact path="/ConsultaFactura" component={ConsultaFactura} />
+                    <Route exact path="/ModuloAdministrador" component={ModuloAdministrador} />
+                    <Route exact path="/ModuloAdministrador/Dashboard" component={MADashboard} />
+                    <Route exact path="/ModuloAdministrador/Users" component={MAUsers} />
+                    <Route exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
+                    <Route exact path="/Login" component={Login} />
+                    <Route exact path="/ModuloAdministrador/Publicidad" component={MAPublicidad} />
+                    <Route exact path="/ModuloAdministrador/Publicidad/Modificar" component={ModificarPub} />
+                </Switch>
+            </BrowserRouter>
         </div>
     );
 }
