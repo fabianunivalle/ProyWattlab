@@ -42,6 +42,7 @@ function ModificarPub (props){
             [e.target.name]: e.target.value  
               
         }) 
+        console.log(input)
     }
 
     return(<div className="container">
