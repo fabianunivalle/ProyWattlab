@@ -11,6 +11,7 @@ import Recaptcha from 'react-recaptcha';
 import './style/recaptcha.css';
 import { Layout } from 'antd';
 
+
 //FUNCIONES DEL CAPTCHA
 let valido;
 

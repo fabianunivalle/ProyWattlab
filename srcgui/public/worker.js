@@ -1,7 +1,12 @@
 let CACHE_NAME = 'wattlab-cache';
 let urlsToCache = [
-    '/',
-    '/completed'
+    './',
+    './imagenes/slides/Cali.png',
+    './imagenes/slides/Slide0.png',
+    './imagenes/slides/Slide1.png',
+    './imagenes/slides/slideCali.png',
+    '/ConsultaFactura',
+    '/PQRS',
 ];
 
 // Install a service worker
@@ -12,7 +17,7 @@ self.addEventListener('install', event => {
             .then(function (cache) {
                 console.log('Opened cache');
                 return cache.addAll(urlsToCache);
-            })
+            }).then(self.skipWaiting())
     );
 });
 

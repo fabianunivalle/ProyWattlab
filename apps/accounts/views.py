@@ -1,11 +1,13 @@
 
 from rest_framework import status, generics, viewsets
+from rest_framework.mixins import UpdateModelMixin
+
 from rest_framework.response import Response
 from rest_framework.authtoken.models import  Token
 from rest_framework.authtoken.views import ObtainAuthToken
 
 from django.contrib.auth.models import User
-from .serializer import  UserSerializer
+from .serializer import  UserSerializer, UpdateUserSerializer, ProfileSeralizer
 
 #Listar/Registrar usuarios (GET/POST)
 class UserView(viewsets.ModelViewSet): 
@@ -27,8 +29,15 @@ class LoginUserView(ObtainAuthToken):
             'user': user_serializer.data
         }, status= status.HTTP_200_OK)
 
-
-
+#Update user and profile
+class UpdateUser(generics.GenericAPIView, UpdateModelMixin): 
+    
+    serializer_class= UpdateUserSerializer
+    queryset= User.objects.all()
+    
+    def put(self, request, *args, **kwargs):    
+        return self.partial_update(request, *args, **kwargs)
+    
 
 
 
