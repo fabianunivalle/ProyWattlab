@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Encabezado from './Encabezado';
+import { useForm } from 'react-hook-form'
 
 function Configuracion() {
     const i18n = useTranslation();
+
     return (
         <div className="container-fluid" style={{backgroundColor: "white", position: "absolute", top: "70px", left: "0px"}}>
             <Encabezado
