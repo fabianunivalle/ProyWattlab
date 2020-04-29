@@ -1,14 +1,11 @@
 import React from 'react';
-import Text from 'antd/lib/typography/Text';
 
-class Footer extends React.Component {
-    render() {
+function Footer(){
         return (
-            <footer className="navbar navbar-expand-md navbar-dark fixed-buttom" style={{ backgroundColor: 'black', color: 'white'}}>
-                <p>&copy; {(new Date().getFullYear())} wattlab, Inc.</p>
-            </footer>
+            <nav className="navbar fixed-buttom navbar-dark bg-dark" style={{ backgroundColor: 'black', color: 'white'}}>
+                    <p>&copy; {(new Date().getFullYear())} wattlab, Inc.</p>
+            </nav>
         );
-    }
 }
 
 export default Footer;
