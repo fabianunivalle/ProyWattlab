@@ -14,8 +14,8 @@ const handleFormSubmit = e => {
         "asunto": e.target.elements.asunto.value,
         "contenido": e.target.elements.contenido.value,
         "email": e.target.elements.email.value
-    }).then(res => console.log(res.data))
-      .catch(error => console.log(error))
+    }).then(res => {console.log(res)})
+      .catch(error => {console.log(error)})
     
     e.target.elements.asunto.value="";
     e.target.elements.contenido.value="";

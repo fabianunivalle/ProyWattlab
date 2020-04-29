@@ -11,9 +11,11 @@ import Recaptcha from 'react-recaptcha';
 import './style/recaptcha.css';
 import { Layout } from 'antd';
 
+import BackService from '../store/PeticionesBack'; //CENTRALIZACION DE LAS SOLICITUDES
+const solicitudBack = new BackService();
 
 //FUNCIONES DEL CAPTCHA
-let valido;
+let valido=null;
 
 var callback = function () {
     console.log('Done!');
@@ -81,11 +83,10 @@ function Login(props) {
                                 <div>
                                     <button type="submit" className="btn btn-success btn-block">{i18n.t('click_here')}</button>
                                 </div>
-
-                                <div style={{ marginTop: 15 }}>
-                                    <a href="#" className="text-decoration-none">{i18n.t('login_password_forget')}</a>
-                                </div>
                             </form>
+                            <div style={{ marginTop: 15 }}>
+                                <a href='http://127.0.0.1:8000/auth/account/password-reset/'  className="text-decoration-none">{i18n.t('login_password_forget')}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
