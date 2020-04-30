@@ -21,7 +21,7 @@ function Card(props) {
                </div>
                <h5 className="card-title">{i18n.t(titulo)}</h5>
                <p className="card-text">{i18n.t(descripcion)}</p>
-               <a className="btn btn-success" href="#" role="button" onClick={() => window.location = urlRuta}> {i18n.t('click_here')} &raquo;</a>
+               <a href='#' className="btn btn-success" href="#" role="button" onClick={() => window.location = urlRuta}> {i18n.t('click_here')} &raquo;</a>
             </div>
          </div>
       </div>
