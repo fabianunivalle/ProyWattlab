@@ -1,0 +1,168 @@
+{
+   "translation":{
+      "language":{
+         "lang_title":"Linguagem",
+         "lang_spanish-title":"Espanhol",
+         "lang_english-title":"Inglês",
+         "lang_portuguese-title":"Português"
+      },
+      "homepage":{
+         "slides_homepage":{
+            "sld1_title":"",
+            "sld1_description":"",
+            "sld2_title":"Energia elétrica",
+            "sld2_description":"De pura QUALIDADE.",
+            "sld3_title":"PARA TODOS OS CALEÑOS",
+            "sld3_description":""
+         },
+         "services-homepage":{
+            "svcs_title":"Pensamos no seu conforto",
+            "svcs_description":"Encontre aqui todos os nossos serviços e transações on-line"
+         },
+         "bill-homepage":{
+            "bill_title":"Verifique sua fatura",
+            "bill_description":"Para verificar seu extrato, faça o download ou pague sua fatura",
+            "bill_btn-ext":"Clique aqui"
+         },
+         "information-homepage":{
+            "info_title":"Informação",
+            "info_description":"Informações sobre nossos produtos, serviços, preços, etc",
+            "info_btn-ext":"Clique aqui"
+         },
+         "pqrs-homepage":{
+            "pqrs_title":"Petições, reclamações, reivindicações e sugestões",
+            "pqrs_description":"Seção PQRS",
+            "pqrs_ptn-title":"Petição",
+            "pqrs_ptn-description":"É direito fundamental de qualquer pessoa enviar solicitações respeitosas às autoridades por razões de interesse geral ou particular e obter sua pronta resolução.",
+            "pqrs_cmpn-title":"Reclamação",
+            "pqrs_mpn-description":"É a manifestação de protesto, censura, descontentamento, não conformidade ou insatisfação que uma pessoa formula devido à violação de uma norma legal atual.",
+            "pqrs_clm-title":"Reivindicar",
+            "pqrs_clm-description":"É o direito de toda pessoa exigir, exigir ou exigir uma solução ou atenção satisfatória, seja por um motivo geral ou particular, em relação à prestação inadequada de um serviço ou à falta de atenção a uma solicitação.",
+            "pqrs_sgtn-title":"Sugestão",
+            "pqrs_sgtn-description":"É a expressão de idéias ou propostas que podem ajudar a melhorar um serviço ou o gerenciamento da mesma entidade.",
+            "pqrs_sndrq-description":"Para enviar sua solicitação, preencha os seguintes campos",
+            "pqrs_sbjt-title":"Assunto",
+            "pqrs_email-title":"Correio eletrônico",
+            "pqrs_dcptn-title":"Descrição",
+            "pqrs_btn-ext":"Clique aqui",
+            "pqrs_btn-subm":"Mandar"
+         },
+         "news-homepage":{
+            "news_title":"Notícias e atualizações",
+            "news_description":"Aqui vai a seção de notícias..."
+         }
+      },
+      "login":{
+         "login_title":"Iniciar sessão",
+         "login_description":"Entre com seus dados na área de funcionários, aqui você pode executar mais ações e conhecer os movimentos dos usuários.",
+         "login_doc-title":"Número do documento",
+         "login_pass-title":"Senha",
+         "login_pass-forget-description":"Esqueceu sua senha?",
+         "login_btn-login":"Iniciar sessão",
+         "login_btn-logout":"Fechar sessão"
+      },
+      "buttons-panel":{
+         "buttons_btn-home":"Casa",
+         "buttons_btn-users":"Usuários",
+         "buttons_btn-actives":"Ativos",
+         "buttons_btn-reports":"Relatórios",
+         "buttons_btn-payments":"Pagamentos",
+         "buttons_btn-advertising":"Publicidade",
+         "buttons_btn-customers":"Clientes",
+         "buttons_btn-banks":"Bancos",
+         "buttons_btn-settings":"Configurações"
+      },
+      "administration-panel":{
+         "adm_title":"Painel do administrador",
+         "adm_description":"A continuação, selecione uma das seguintes opções"
+      },
+      "users-panel":{
+         "usr_ext-title":"Usuários",
+         "usr_ext-description":"Adicionar, editar e consultar usuários",
+         "usr_int-title":"Painel usuários",
+         "usr_int-description":"A continuação, encontrará a lista de usuários",
+         "usr_id":"ID",
+         "usr_name":"Nome",
+         "usr_type":"Tipo de usuário",
+         "usr_state":"Estado",
+         "usr_date-init":"Data de início",
+         "usr_opts":"Opções",
+         "usr_btn-find":"Pesquisar",
+         "usr_btn-new":"Novo",
+         "usr_btn-change":"Modificar",
+         "usr_btn-inactive":"Desativar"
+      },
+      "actives-panel":{
+         "act_ext-title":"Activos",
+         "act_ext-description":"Ubicación de los transformadores y subestaciones",
+         "act_int-title":"Transformadores y subestaciones",
+         "act_int-description":"A continuación, encontrará la ubicación de los transformadores y subestaciones.",
+         "actives-panel-transformer":{
+            "act_id-trfm":"ID Transformador",
+            "act_sub-trfm":"Subestación",
+            "act_grp-cnt-trfm":"Grupo de conexión",
+            "act_vprmy-trfm":"Tensión primaria",
+            "act_vmax-trfm":"Tensión máxima",
+            "act_vsecond-trfm":"Tensión secundaria",
+            "act_npw-trfm":"Potencia nominal",
+            "act_nity-trfm":"Intensidad nominal",
+            "act_scvltg-trfm":"Tensión cortocircuito",
+            "act_rt-trfm":"Relación de transformador",
+            "act_lctn-trfm":"Ubicación",
+            "act_btn-trfm":"Transformador",
+            "act_btn-slt-map-trfm":"Seleccionar en el mapa",
+            "act_btn-add-trfm":"Añadir"
+         },
+         "actives-panel-substation":{
+            "act_id-sub":"ID Subestacion",
+            "act_name-sub":"Nombre",
+            "act_address-sub":"Dirección",
+            "act_tel-sub":"Número de teléfono",
+            "act_city-sub":"Ciudad",
+            "act_btn-sub":"Subestacion",
+            "act-btn-slt-map-sub":"Seleccionar en el mapa",
+            "act_btn-add-sub":"Añadir"
+         }
+      },
+      "reports-panel":{
+         "rpt-panel_ext-title":"Reportes",
+         "rpt-panel_ext-description":"Reporte de ingresos de la empresa",
+         "rpt-panel_int-title":"Panel de reportes",
+         "rpt-panel_int-description":"A continuación, encontrará los reportes de ingresos económicos"
+      },
+      "payments-panel":{
+         "pay_ext-title":"Pagos",
+         "pay_ext-description":"Registro de pago de servicios por clientes",
+         "pay_int-title":"Panel de pagos de clientes",
+         "pay_int-description":"En esta sección usted podrá registrar los pagos de los clientes",
+         "pay_id":"ID Usuario",
+         "pay_bill-ref":"# Referencia factura",
+         "pay_pay-date":"Fecha de pago",
+         "pay_exp-date":"Fecha de vencimiento",
+         "pay_pay-type":"Tipo de pago",
+         "pay_val-paid":"Valor pagado",
+         "pay_slt-bank":"Seleccione el banco",
+         "pay_bill-state":"Estado de la factura",
+         "pay_btn-save":"Guardar",
+         "pay_btn-cancel":"Cancelar"
+      },
+      "advertising-panel":{
+         "adv-panel_ext-title":"Publicidad",
+         "adv-panel_ext-description":"Registro de la publicidad",
+         "adv-panel_int-title":"",
+         "adv-panel_int-description":""
+      },
+      "customers-panel":{
+         "cst-panel_ext-title":"Clientes",
+         "cst-panel_ext-description":"Registro de clientes",
+         "cst-panel_int-title":"",
+         "cst-panel_int-description":""
+      },
+      "banks-panel":{
+         "bks-panel_ext-title":"Bancos",
+         "bks-panel_ext-description":"Pagos por bancos",
+         "bks-panel_int-title":"",
+         "bks-panel_int-description":""
+      }
+   }
+}

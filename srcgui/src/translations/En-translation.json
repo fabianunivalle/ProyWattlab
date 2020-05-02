@@ -1,0 +1,168 @@
+{
+   "translation":{
+      "language":{
+         "lang_title":"Language",
+         "lang_spanish-title":"Spanish",
+         "lang_english-title":"English",
+         "lang_portuguese-title":"Portuguese"
+      },
+      "homepage":{
+         "slides_homepage":{
+            "sld1_title":"",
+            "sld1_description":"",
+            "sld2_title":"Electric power",
+            "sld2_description":"Of pure QUALITY",
+            "sld3_title":"FOR ALL CALEÑOS",
+            "sld3_description":""
+         },
+         "services-homepage":{
+            "svcs_title":"We think about your comfort",
+            "svcs_description":"Find here all our services and online transactions"
+         },
+         "bill-homepage":{
+            "bill_title":"Check your bill",
+            "bill_description":"To check your statement, download or pay your bill",
+            "bill_btn-ext":"Click here"
+         },
+         "information-homepage":{
+            "info_title":"Information",
+            "info_description":"Information about our products, services, prices, etc",
+            "info_btn-ext":"Click here"
+         },
+         "pqrs-homepage":{
+            "pqrs_title":"Petitions, complaints, claims and suggestions",
+            "pqrs_description":"PQRS section",
+            "pqrs_ptn-title":"Petition",
+            "pqrs_ptn-description":"It is the fundamental right of every person to submit respectful requests to the authorities for reasons of general or particular interest, and to obtain their prompt resolution.",
+            "pqrs_cmpn-title":"Complaint",
+            "pqrs_mpn-description":"It is the manifestation of protest, censorship, dissatisfaction, disagreement or dissatisfaction that a person formulates because of the breach of a current legal norm.",
+            "pqrs_clm-title":"Claim",
+            "pqrs_clm-description":"It is the right that every person has to demand, claim or sue a satisfactory solution or attention, whether for a general or particular reason, regarding the improper provision of a service or the lack of attention to a request.",
+            "pqrs_sgtn-title":"Suggestion",
+            "pqrs_sgtn-description":"It is the expression of ideas or proposals that can help to improve a service or the management of the same entity.",
+            "pqrs_sndrq-description":"To send your request, fill in the following fields",
+            "pqrs_sbjt-title":"Subject",
+            "pqrs_email-title":"E-mail",
+            "pqrs_dcptn-title":"Description",
+            "pqrs_btn-ext":"Click here",
+            "pqrs_btn-subm":"Submit"
+         },
+         "news-homepage":{
+            "news_title":"News and updates",
+            "news_description":"Here goes the news section..."
+         }
+      },
+      "login":{
+         "login_title":"Log in",
+         "login_description":"Enter with your data to the employee area, here you can perform more actions and know the movements of users.",
+         "login_doc-title":"ID number",
+         "login_pass-title":"Password",
+         "login_pass-forget-description":"Did you forget your password?",
+         "login_btn-login":"Log in",
+         "login_btn-logout":"Log out"
+      },
+      "buttons-panel":{
+         "buttons_btn-home":"Home",
+         "buttons_btn-users":"Users",
+         "buttons_btn-actives":"Actives",
+         "buttons_btn-reports":"Reports",
+         "buttons_btn-payments":"Payments",
+         "buttons_btn-advertising":"Advertising",
+         "buttons_btn-customers":"Customers",
+         "buttons_btn-banks":"Banks",
+         "buttons_btn-settings":"Settings"
+      },
+      "administration-panel":{
+         "adm_title":"Administration panel",
+         "adm_description":"Below, select one of the following options"
+      },
+      "users-panel":{
+         "usr_ext-title":"Users",
+         "usr_ext-description":"Add, edit and consult users",
+         "usr_int-title":"Users panel",
+         "usr_int-description":"Below, you will find the list of users",
+         "usr_id":"ID",
+         "usr_name":"Name",
+         "usr_type":"Type user",
+         "usr_state":"State",
+         "usr_date-init":"Start date",
+         "usr_opts":"Options",
+         "usr_btn-find":"Find",
+         "usr_btn-new":"New",
+         "usr_btn-change":"Change",
+         "usr_btn-inactive":"Inactivate"
+      },
+      "actives-panel":{
+         "act_ext-title":"Actives",
+         "act_ext-description":"Location of transformers and substations",
+         "act_int-title":"Transformers and substations",
+         "act_int-description":"Below, you will find the location of transformers and substations",
+         "actives-panel-transformer":{
+            "act_id-trfm":"ID Transformer",
+            "act_sub-trfm":"Substation",
+            "act_grp-cnt-trfm":"Connection group",
+            "act_vprmy-trfm":"Primary voltage",
+            "act_vmax-trfm":"Maximum voltage",
+            "act_vsecond-trfm":"Secondary voltage",
+            "act_npw-trfm":"Nominal power",
+            "act_nity-trfm":"Nominal intensity",
+            "act_scvltg-trfm":"Short circuit voltage",
+            "act_rt-trfm":"Transformer ratio",
+            "act_lctn-trfm":"Location",
+            "act_btn-trfm":"Transformer",
+            "act_btn-slt-map-trfm":"Select on the map",
+            "act_btn-add-trfm":"Add"
+         },
+         "actives-panel-substation":{
+            "act_id-sub":"ID Substation",
+            "act_name-sub":"Name",
+            "act_address-sub":"Address",
+            "act_tel-sub":"Number phone",
+            "act_city-sub":"City",
+            "act_btn-sub":"Substation",
+            "act-btn-slt-map-sub":"Select on the map",
+            "act_btn-add-sub":"Add"
+         }
+      },
+      "reports-panel":{
+         "rpt-panel_ext-title":"Reports",
+         "rpt-panel_ext-description":"Company income report",
+         "rpt-panel_int-title":"Reports panel",
+         "rpt-panel_int-description":"Below, you will find the economic income reports"
+      },
+      "payments-panel":{
+         "pay_ext-title":"Payments",
+         "pay_ext-description":"Record of payment of services by clients",
+         "pay_int-title":"Customer payment panel",
+         "pay_int-description":"In this section you can record customer payments",
+         "pay_id":"ID User",
+         "pay_bill-ref":"# Bill reference",
+         "pay_pay-date":"Payment date",
+         "pay_exp-date":"Expiration date",
+         "pay_pay-type":"Payment type",
+         "pay_val-paid":"Value paid",
+         "pay_slt-bank":"Select the bank",
+         "pay_bill-state":"Bill status",
+         "pay_btn-save":"Save",
+         "pay_btn-cancel":"Cancel"
+      },
+      "advertising-panel":{
+         "adv-panel_ext-title":"Advertising",
+         "adv-panel_ext-description":"Advertising registration",
+         "adv-panel_int-title":"",
+         "adv-panel_int-description":""
+      },
+      "customers-panel":{
+         "cst-panel_ext-title":"Customers",
+         "cst-panel_ext-description":"Customer registration",
+         "cst-panel_int-title":"",
+         "cst-panel_int-description":""
+      },
+      "banks-panel":{
+         "bks-panel_ext-title":"Banks",
+         "bks-panel_ext-description":"Bank payments",
+         "bks-panel_int-title":"",
+         "bks-panel_int-description":""
+      }
+   }
+}
