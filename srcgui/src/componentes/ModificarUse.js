@@ -102,7 +102,7 @@ function ModificarUse(props) {
 
     return (<div className="container">
         <br /><br /><br /><br /><br />
-        <h1 className="text-center">{props.titulo}</h1>
+        <h1 className="text-center">{props.h1}</h1>
         <br /><br /><br />
         <form method="POST" onSubmit={(event) =>props.onSubmit(event,usuario)}>
             <div className="form-row">
@@ -133,8 +133,7 @@ function ModificarUse(props) {
                         <option></option>
                         <option >Gerente</option>
                         <option >Administrador</option>
-                        <option >Operador</option>
-                        
+                        <option >Operador</option>     
                     </select>
                     <div class="invalid-feedback">Por favor elija una opcion</div>
                 </div>

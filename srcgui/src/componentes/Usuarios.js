@@ -48,7 +48,6 @@ class Usuarios extends Component {
 
     //Con estos estados me doy cuenta que boton se presiono si el modificar o el nuevo
     state = {
-        banderaD:false,
         banderaM: false,
         banderaN: false,
         id: '',
@@ -57,27 +56,26 @@ class Usuarios extends Component {
         apellido: '',
         email: '',
         perfil: '',
-        datos: []
+        datos: [],
+        buscador: '',
+        resultado: ''
     }
 
-    //Con estos estado almaceno los datos que recibo de table y los mando al formulario 
-    //En este estado almaceno los datos que recibo de la api
-
-    
+    //Con este metodo hago el llamdo a solicitud una vez se renderize el componente.
     async componentDidMount() {
         this.solicitud()
     }
 
+    //Con este metodo haga el llamado a los datos al back para guardarlos en el estado.
     solicitud = () => {
-        solicitudBack.getListUser()//Envio de datos al back
+        solicitudBack.getListUser()
             .then(res => {
                 this.setState({
                     datos: res
                 })
+                this.buscador(this.state.buscador)
+                
             })
-
-        console.log('se esta llamando')
-        console.log(this.state.datos)
     }
 
     
@@ -114,7 +112,7 @@ class Usuarios extends Component {
                 apellido={this.state.apellido}
                 email={this.state.email}
                 perfil={this.state.perfil}
-                titulo={'Modificar Usuario'}
+                h1={'Modificar Usuario'}
                 nameBtn={'Modificar Usuario'}
                 cancelar={this.cerrarFormulario} 
                 />
@@ -130,7 +128,7 @@ class Usuarios extends Component {
                 apellido={''}
                 email={''}
                 perfil={''}
-                titulo={'Nuevo Usuario'}
+                h1={'Nuevo Usuario'}
                 nameBtn={'Crear Usuario'}
                 cancelar={this.cerrarFormulario} 
                />
@@ -162,19 +160,51 @@ class Usuarios extends Component {
         });
     }
 
+    onChange = (e) => {
+        this.setState({
+            buscador: e.target.value.toLowerCase()
+        })
+        this.buscador(e.target.value.toLowerCase());    
+    }
+
+    onKeyPressed = (e) => {
+        if(e.keyCode===8){
+            this.solicitud()
+        }
+    }
+
+    buscador = (letra) => {
+        const datosNuevos = this.state.datos.filter(function(fila){
+            if(fila.username.toLowerCase().indexOf(letra)!==-1){
+                return fila;
+            }else if(fila.first_name.toLowerCase().indexOf(letra)!==-1)
+            {
+                return fila;
+            }   
+        })
+        this.setState({
+            datos: datosNuevos,
+            resultado:datosNuevos.length
+        })
+    }
+
+    default = (e) =>{
+        e.preventDefault();
+    }
+
     render() {
         return (
-            <div className="container-fluid" style={{ backgroundColor: "white", position: "absolute", top: "70px", left: "0px" }}>
+            <div onKeyDown={this.onKeyPressed} className="container-fluid" style={{ backgroundColor: "white", position: "absolute", top: "70px", left: "0px" }}>
                 <Encabezado
                     titulo='users_panel'
                     descripcion='users_panel_description'
                 />
                 <div className="container" style={{ justifyContent: "center" }}>
-                    <form>
+                    <form onSubmit={this.default} className="needs-validation" noValidate>
                         <div className="form-row justify-content-between">
-                            <div className="col-lg-4 col-md-8 col-sm-12 col-xs-12" style={{ marginBottom: "10px" }}>
+                            <div className="col-lg-8 col-md-12 col-sm-12 col-xs-12" style={{ marginBottom: "10px" }}>
                                 <div className="input-group">
-                                    <input type="text" className="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required></input>
+                                    <input type="text" className="form-control" value={this.state.buscador} onChange={this.onChange} autoComplete="off" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required></input>
                                     <div className="input-group-prepend">
                                         <span className="input-group-text" id="inputGroupPrepend2">
                                             <svg className="bi bi-search" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -196,6 +226,12 @@ class Usuarios extends Component {
                                     </svg>
                                 &nbsp; Nuevo
                             </button>
+                            </div>
+                            
+                            <div className="alert alert-success col-md-6">
+                                Resultados:
+                                <strong> {this.state.resultado} filas encontradas.</strong>
+                                         
                             </div>
                             {this.mostrarTable()}
                         </div>

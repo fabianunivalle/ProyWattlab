@@ -31,7 +31,7 @@ export default class BackService {
         return axios.get(url).then(res => res.data)
             .catch(error => console.log(error))
     }
-    postCrearPublicidad(publicidad) {
+    postRegisterPublicidad(publicidad) {
         const url = `${API_URL}/api/articulo/`;
         return axios.post(url, publicidad).then(res => res.data)
             .catch(error => console.log(error));
