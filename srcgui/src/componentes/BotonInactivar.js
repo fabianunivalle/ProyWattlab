@@ -10,7 +10,7 @@ function BotonInactivar() {
                 <path d="M5.525 7.646a2.5 2.5 0 002.829 2.829l-2.83-2.829zm4.95.708l-2.829-2.83a2.5 2.5 0 012.829 2.829z"/>
                 <path fill-rule="evenodd" d="M13.646 14.354l-12-12 .708-.708 12 12-.708.708z" clip-rule="evenodd"/>
                 </svg>
-                &nbsp; {i18n.t('inactivate')}
+                &nbsp; {i18n.t('users-panel.usr_btn-inactive')}
             </button>
         );
 }
