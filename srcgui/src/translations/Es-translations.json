@@ -23,7 +23,7 @@
             "bill_title":"Consulta tu factura",
             "bill_description":"Para consultar tu extracto, descargar o pagar tu factura",
             "bill_dig-doc":"Digite su número de documento",
-            "bill_num-fact":"Factura #",
+            "bill_num-fact":"# Factura",
             "bill_prd":"Periodo",
             "bill_valwouts":"Valor sin recargo",
             "bill_datewouts":"Fecha sin recargo",
@@ -117,6 +117,10 @@
          "actives-panel-transformer":{
             "act_id-trfm":"ID Transformador",
             "act_sub-trfm":"Subestación",
+            "act-sub-trfm-sub1":"Subestación 1",
+            "act-sub-trfm-sub2":"Subestación 2",
+            "act-sub-trfm-sub3":"Subestación 3",
+            "act-sub-trfm-sub4":"Subestación 4",
             "act_grp-cnt-trfm":"Grupo de conexión",
             "act_grp-cnt-trfm-star":"Estrella",
             "act_grp-cnt-trfm-triangle":"Triángulo",
@@ -139,6 +143,7 @@
             "act_address-sub":"Dirección",
             "act_tel-sub":"Número de teléfono",
             "act_city-sub":"Ciudad",
+            "act_lctn-sub":"Ubicación",
             "act_btn-sub":"Subestacion",
             "act-btn-slt-map-sub":"Seleccionar en el mapa",
             "act_btn-add-sub":"Añadir"
@@ -160,9 +165,16 @@
          "pay_pay-date":"Fecha de pago",
          "pay_exp-date":"Fecha de vencimiento",
          "pay_pay-type":"Tipo de pago",
+         "pay_pay-type-cash":"Efectivo",
+         "pay_pay-type-btransfer":"Transferencia bancaria",
          "pay_val-paid":"Valor pagado",
          "pay_slt-bank":"Seleccione el banco",
+         "pay_slt-bank-b1":"Banco 1",
+         "pay_slt-bank-b2":"Banco 2",    
+         "pay_slt-bank-b3":"Banco 3",             
          "pay_bill-state":"Estado de la factura",
+         "pay_bill-state-generated": "Generada",
+         "pay_bill-state-ngenerated": "No generada",
          "pay_btn-save":"Guardar",
          "pay_btn-cancel":"Cancelar"
       },
@@ -183,6 +195,16 @@
          "bks_ext-description":"Pagos por bancos",
          "bks_int-title":"",
          "bks_int-description":""
+      },
+      "setting-panel": {
+         "set_int-title":"Configuraciones",
+         "set_int-description":"Ajuste de tarifas por periodo de tiempo",
+         "set_val-kwh":"Valor del kWh",
+         "set_beg-vald-rate":"Inicio vigencia tarifa",
+         "set_end-vald-rate":"Fin vigencia tarifa",
+         "set_obsv":"Observaciones",
+         "set_btn-accept":"Aceptar",
+         "set_btn-cancel":"Cancelar"
       }
    }
 }

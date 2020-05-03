@@ -23,7 +23,7 @@
             "bill_title":"Verifique sua fatura",
             "bill_description":"Para verificar seu extrato, faça o download ou pague sua fatura",
             "bill_dig-doc":"Digite o número do seu documento",
-            "bill_num-fact":"Fatura #",
+            "bill_num-fact":"# Fatura",
             "bill_prd":"Período",
             "bill_valwouts":"Valor sem sobretaxa",
             "bill_datewouts":"Data sem sobretaxa",
@@ -117,6 +117,10 @@
          "actives-panel-transformer":{
             "act_id-trfm":"ID Transformador",
             "act_sub-trfm":"Subestação",
+            "act-sub-trfm-sub1":"Subestação 1",
+            "act-sub-trfm-sub2":"Subestação 2",
+            "act-sub-trfm-sub3":"Subestação 3",
+            "act-sub-trfm-sub4":"Subestação 4",
             "act_grp-cnt-trfm":"Grupo de conexão",
             "act_grp-cnt-trfm-star":"Estrela",
             "act_grp-cnt-trfm-triangle":"Triângulo",
@@ -139,6 +143,7 @@
             "act_address-sub":"Morada",
             "act_tel-sub":"Número de telefone",
             "act_city-sub":"Cidade",
+            "act_lctn-sub":"Localização",
             "act_btn-sub":"Subestação",
             "act-btn-slt-map-sub":"Selecione no mapa",
             "act_btn-add-sub":"Adicionar"
@@ -154,15 +159,22 @@
          "pay_ext-title":"Pagamentos",
          "pay_ext-description":"Registro de pagamento de serviços pelos clientes",
          "pay_int-title":"Painel de pagamento do cliente",
-         "pay_int-description":"Nesta seção, você pode registrar pagamentos de clientes",
+         "pay_int-description":"Nesta seção você pode registrar pagamentos de clientes",
          "pay_id":"ID Usuário",
          "pay_bill-ref":"# Referência da fatura",
          "pay_pay-date":"Data de pagamento",
          "pay_exp-date":"Data de vencimento",
          "pay_pay-type":"Tipo de pagamento",
+         "pay_pay-type-cash":"Dinheiro",
+         "pay_pay-type-btransfer":"Transferência bancária",
          "pay_val-paid":"Valor pago",
          "pay_slt-bank":"Selecione o banco",
+         "pay_slt-bank-b1":"Banco 1",
+         "pay_slt-bank-b2":"Banco 2",    
+         "pay_slt-bank-b3":"Banco 3",  
          "pay_bill-state":"Status da fatura",
+         "pay_bill-state-generated": "Gerado",
+         "pay_bill-state-ngenerated": "Não gerado",
          "pay_btn-save":"Salvar",
          "pay_btn-cancel":"Cancelar"
       },
@@ -183,6 +195,16 @@
          "bks_ext-description":"Pagamentos bancários",
          "bks_int-title":"",
          "bks_int-description":""
+      },
+      "setting-panel": {
+         "set_int-title":"Configurações",
+         "set_int-description":"Ajuste de taxa por período",
+         "set_val-kwh":"Valor do KWh",
+         "set_beg-vald-rate":"Taxa de validade inicial",
+         "set_end-vald-rate":"Fim da taxa de validade",
+         "set_obsv":"Observações",
+         "set_btn-accept":"Aceitar",
+         "set_btn-cancel":"Cancelar"
       }
    }
 }

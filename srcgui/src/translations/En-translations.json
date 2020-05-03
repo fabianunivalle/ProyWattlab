@@ -23,7 +23,7 @@
             "bill_title":"Check your bill",
             "bill_description":"To check your statement, download or pay your bill",
             "bill_dig-doc":"Enter your ID number",
-            "bill_num-fact":"Bill #",
+            "bill_num-fact":"# Bill",
             "bill_prd":"Period",
             "bill_valwouts":"Value without surcharge",
             "bill_datewouts":"Date without surcharge",
@@ -117,6 +117,10 @@
          "actives-panel-transformer":{
             "act_id-trfm":"ID Transformer",
             "act_sub-trfm":"Substation",
+            "act-sub-trfm-sub1":"Substation 1",
+            "act-sub-trfm-sub2":"Substation 2",
+            "act-sub-trfm-sub3":"Substation 3",
+            "act-sub-trfm-sub4":"Substation 4",
             "act_grp-cnt-trfm":"Connection group",        
             "act_grp-cnt-trfm-star":"Star",
             "act_grp-cnt-trfm-triangle":"Triangle",
@@ -139,6 +143,7 @@
             "act_address-sub":"Address",
             "act_tel-sub":"Number phone",
             "act_city-sub":"City",
+            "act_lctn-sub":"Location",
             "act_btn-sub":"Substation",
             "act-btn-slt-map-sub":"Select on the map",
             "act_btn-add-sub":"Add"
@@ -160,9 +165,16 @@
          "pay_pay-date":"Payment date",
          "pay_exp-date":"Expiration date",
          "pay_pay-type":"Payment type",
+         "pay_pay-type-cash":"Cash",
+         "pay_pay-type-btransfer":"Bank transfer",
          "pay_val-paid":"Value paid",
          "pay_slt-bank":"Select the bank",
+         "pay_slt-bank-b1":"Bank 1",
+         "pay_slt-bank-b2":"Bank 2",    
+         "pay_slt-bank-b3":"Bank 3",  
          "pay_bill-state":"Bill status",
+         "pay_bill-state-generated": "Generated",
+         "pay_bill-state-ngenerated": "Not generated",
          "pay_btn-save":"Save",
          "pay_btn-cancel":"Cancel"
       },
@@ -183,6 +195,16 @@
          "bks_ext-description":"Bank payments",
          "bks_int-title":"",
          "bks_int-description":""
+      },
+      "setting-panel": {
+         "set_int-title":"Settings",
+         "set_int-description":"Rate adjustment by time period",
+         "set_val-kwh":"KWh Value",
+         "set_beg-vald-rate":"Beginning validity rate",
+         "set_end-vald-rate":"End of validity rate",
+         "set_obsv":"Observations",
+         "set_btn-accept":"Accept",
+         "set_btn-cancel":"Cancel"
       }
    }
 }
