@@ -15,8 +15,8 @@ function Card(props) {
                   <svg className="bi bi-file-earmark-arrow-down" width="50px" height="50px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <path d={d1}/>
                      <path d={d2}/>
-                     <path fill-rule="evenodd" d={d3} clip-rule="evenodd"/>
-                     <path fill-rule="evenodd" d={d4} clip-rule="evenodd"/>
+                     <path fillRule="evenodd" d={d3} clipRule="evenodd"/>
+                     <path fillRule="evenodd" d={d4} clipRule="evenodd"/>
                   </svg>
                </div>
                <h5 className="card-title">{i18n.t(titulo)}</h5>

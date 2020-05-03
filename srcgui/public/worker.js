@@ -45,6 +45,7 @@ self.addEventListener('activate', e => {
 // Cache and return requests
 self.addEventListener('fetch', e=> {
     console.log('ServiceWorker: Fetching'); 
+    if (!(e.request.url.indexOf('http') === 0)) return; // skip the request. if request is not made with http protocol
 
     e.respondWith( 
         fetch(e.request)

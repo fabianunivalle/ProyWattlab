@@ -34,10 +34,10 @@ function BotonInactivar(props) {
         return (
             <React.Fragment>
             <button type="button" onClick={props.cambiarEstado} className={props.claseBoton} style={{marginBottom: "10px", width: "130px"}}>
-                <svg class="bi bi-eye-slash-fill" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg className="bi bi-eye-slash-fill" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d={icono.d}/>
                 <path d={icono.d1}/>
-                <path fill-rule="evenodd" d={icono.d2} clip-rule="evenodd"/>
+                <path fillRule="evenodd" d={icono.d2} clipRule="evenodd"/>
                 </svg>
                 &nbsp; {i18n.t(props.nombre)}
             </button>

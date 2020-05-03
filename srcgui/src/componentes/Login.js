@@ -11,9 +11,6 @@ import Recaptcha from 'react-recaptcha';
 import './style/recaptcha.css';
 import { Layout } from 'antd';
 
-import BackService from '../store/PeticionesBack'; //CENTRALIZACION DE LAS SOLICITUDES
-const solicitudBack = new BackService();
-
 //FUNCIONES DEL CAPTCHA
 let valido=null;
 

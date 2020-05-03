@@ -70,7 +70,7 @@ function ModificarUse(props) {
                 }
             })
         }
-        console.log(usuario)
+     // console.log(usuario)
     }
 
     const mostrarFormulario = () => {

@@ -19,7 +19,7 @@ class Slides extends React.Component {
                     </div>
                     <div className="carousel-item">
                         <img src="../imagenes/slides/Slide1.jpg" className="d-block w-100" alt="..."></img>
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-none d-md-block d-sm-block d-xs-block">
                             <Translation>
                                 {(t, { i18n }) => <h3 style={{color: "white"}}>{t('slide1_title')}</h3>}
                             </Translation>
