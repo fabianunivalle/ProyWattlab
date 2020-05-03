@@ -8,12 +8,12 @@
       },
       "homepage":{
          "slides_homepage":{
-            "sld1_title":"",
-            "sld1_description":"",
-            "sld2_title":"Energia elétrica",
-            "sld2_description":"De pura QUALIDADE.",
-            "sld3_title":"PARA TODOS OS CALEÑOS",
-            "sld3_description":""
+            "sld1h_title":"",
+            "sld1h_description":"",
+            "sld2h_title":"Energia elétrica",
+            "sld2h_description":"De pura QUALIDADE.",
+            "sld3h_title":"PARA TODOS OS CALEÑOS",
+            "sld3h_description":""
          },
          "services-homepage":{
             "svcs_title":"Pensamos no seu conforto",
@@ -125,10 +125,10 @@
          }
       },
       "reports-panel":{
-         "rpt-panel_ext-title":"Relatórios",
-         "rpt-panel_ext-description":"Relatório de receita da empresa",
-         "rpt-panel_int-title":"Painel relatórios",
-         "rpt-panel_int-description":"A continuação, você encontrará os relatórios de receita"
+         "rpt_ext-title":"Relatórios",
+         "rpt_ext-description":"Relatório de receita da empresa",
+         "rpt_int-title":"Painel relatórios",
+         "rpt_int-description":"A continuação, você encontrará os relatórios de receita"
       },
       "payments-panel":{
          "pay_ext-title":"Pagamentos",
@@ -147,22 +147,22 @@
          "pay_btn-cancel":"Cancelar"
       },
       "advertising-panel":{
-         "adv-panel_ext-title":"Publicidade",
-         "adv-panel_ext-description":"Registro de publicidade",
-         "adv-panel_int-title":"",
-         "adv-panel_int-description":""
+         "adv_ext-title":"Publicidade",
+         "adv_ext-description":"Registro de publicidade",
+         "adv_int-title":"",
+         "adv_int-description":""
       },
       "customers-panel":{
-         "cst-panel_ext-title":"Clientes",
-         "cst-panel_ext-description":"Registro de cliente",
-         "cst-panel_int-title":"",
-         "cst-panel_int-description":""
+         "cst_ext-title":"Clientes",
+         "cst_ext-description":"Registro de cliente",
+         "cst_int-title":"",
+         "cst_int-description":""
       },
       "banks-panel":{
-         "bks-panel_ext-title":"Bancos",
-         "bks-panel_ext-description":"Pagamentos bancários",
-         "bks-panel_int-title":"",
-         "bks-panel_int-description":""
+         "bks_ext-title":"Bancos",
+         "bks_ext-description":"Pagamentos bancários",
+         "bks_int-title":"",
+         "bks_int-description":""
       }
    }
 }

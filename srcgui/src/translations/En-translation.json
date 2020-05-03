@@ -8,12 +8,12 @@
       },
       "homepage":{
          "slides_homepage":{
-            "sld1_title":"",
-            "sld1_description":"",
-            "sld2_title":"Electric power",
-            "sld2_description":"Of pure QUALITY",
-            "sld3_title":"FOR ALL CALEÑOS",
-            "sld3_description":""
+            "sld1h_title":"",
+            "sld1h_description":"",
+            "sld2h_title":"Electric power",
+            "sld2h_description":"Of pure QUALITY",
+            "sld3h_title":"FOR ALL CALEÑOS",
+            "sld3h_description":""
          },
          "services-homepage":{
             "svcs_title":"We think about your comfort",
@@ -125,10 +125,10 @@
          }
       },
       "reports-panel":{
-         "rpt-panel_ext-title":"Reports",
-         "rpt-panel_ext-description":"Company income report",
-         "rpt-panel_int-title":"Reports panel",
-         "rpt-panel_int-description":"Below, you will find the economic income reports"
+         "rpt_ext-title":"Reports",
+         "rpt_ext-description":"Company income report",
+         "rpt_int-title":"Reports panel",
+         "rpt_int-description":"Below, you will find the economic income reports"
       },
       "payments-panel":{
          "pay_ext-title":"Payments",
@@ -147,22 +147,22 @@
          "pay_btn-cancel":"Cancel"
       },
       "advertising-panel":{
-         "adv-panel_ext-title":"Advertising",
-         "adv-panel_ext-description":"Advertising registration",
-         "adv-panel_int-title":"",
-         "adv-panel_int-description":""
+         "adv_ext-title":"Advertising",
+         "adv_ext-description":"Advertising registration",
+         "adv_int-title":"",
+         "adv_int-description":""
       },
       "customers-panel":{
-         "cst-panel_ext-title":"Customers",
-         "cst-panel_ext-description":"Customer registration",
-         "cst-panel_int-title":"",
-         "cst-panel_int-description":""
+         "cst_ext-title":"Customers",
+         "cst_ext-description":"Customer registration",
+         "cst_int-title":"",
+         "cst_int-description":""
       },
       "banks-panel":{
-         "bks-panel_ext-title":"Banks",
-         "bks-panel_ext-description":"Bank payments",
-         "bks-panel_int-title":"",
-         "bks-panel_int-description":""
+         "bks_ext-title":"Banks",
+         "bks_ext-description":"Bank payments",
+         "bks_int-title":"",
+         "bks_int-description":""
       }
    }
 }
