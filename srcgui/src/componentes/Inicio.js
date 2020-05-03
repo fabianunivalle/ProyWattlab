@@ -12,7 +12,7 @@ function Inicio() {
             titulo = {i18n.t('administration_panel')}
             descripcion = {i18n.t('administration_panel_description')}/>
             <div className="container">
-              <div className="row justify-content-lg-center justify-content-md-center">
+              <div className="row justify-content-md-center" style={{marginBottom: "30px"}}>
                 <CardOpt
                 modulo = {i18n.t('users')}
                 urlRuta = "/ModuloAdministrador/Users"
@@ -47,6 +47,33 @@ function Inicio() {
                 d2 = "M.125 5.17A.5.5 0 01.5 5H6a.5.5 0 01.5.5 1.5 1.5 0 003 0A.5.5 0 0110 5h5.5a.5.5 0 01.496.562l-.39 3.124A1.5 1.5 0 0114.117 10H1.883A1.5 1.5 0 01.394 8.686l-.39-3.124a.5.5 0 01.121-.393z"
                 icono = "bi bi-inboxes-fill"
                 informacion = {i18n.t('payments_description')}/>
+
+                <CardOpt
+                modulo = "Publicidad"
+                urlRuta = "/ModuloAdministrador/Publicidad"
+                color = "#00E09C"
+                d1 = "M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 018.5 2.5v11a.5.5 0 01-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 010 13.5v-11a.5.5 0 01.276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 01.22-.103 12.958 12.958 0 012.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 001 2.82z"
+                d2 = "M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z"
+                icono = "bi bi-book-half"
+                informacion = "Registro de la publicidad"/>
+
+                <CardOpt
+                modulo = "Clientes"
+                urlRuta = "/ModuloAdministrador/Clientes"
+                color = "#EE3F69"
+                d1 = "M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                d2 = "M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 100-6 3 3 0 000 6z"
+                icono = "bi bi-person-square"
+                informacion = "Registro de clientes"/>
+
+                <CardOpt
+                modulo = "Bancos"
+                urlRuta = "/ModuloAdministrador/Bancos"
+                color = "#d381ff"
+                d1 = "M0 12.5A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5V6.85L8.129 8.947a.5.5 0 01-.258 0L0 6.85v5.65z"
+                d2 = "M0 4.5A1.5 1.5 0 011.5 3h13A1.5 1.5 0 0116 4.5v1.384l-7.614 2.03a1.5 1.5 0 01-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 016.5 1h3A1.5 1.5 0 0111 2.5V3h-1v-.5a.5.5 0 00-.5-.5h-3a.5.5 0 00-.5.5V3H5v-.5z"
+                icono = "bi bi-person-square"
+                informacion = "Pagos por bancos"/>
             </div>
           </div>
        </div>

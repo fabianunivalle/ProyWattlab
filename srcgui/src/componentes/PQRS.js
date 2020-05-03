@@ -14,8 +14,8 @@ const handleFormSubmit = e => {
         "asunto": e.target.elements.asunto.value,
         "contenido": e.target.elements.contenido.value,
         "email": e.target.elements.email.value
-    }).then(res => console.log(res.data))
-      .catch(error => console.log(error))
+    }).then(res => {console.log(res)})
+      .catch(error => {console.log(error)})
     
     e.target.elements.asunto.value="";
     e.target.elements.contenido.value="";
@@ -31,8 +31,8 @@ function PQRS() {
                 <Menu/>
             </div>
                 
-            <div style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
-                <img class="img-fluid" alt="Responsive image" src='../imagenes/Banner.jpg'></img>
+            <div className="container" style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
+                <img className="img-fluid" alt="Responsive image" src='../imagenes/Banner.jpg'></img>
             </div>
             
             <div className="container" style={{marginTop: "20px", marginBottom: "50px"}}>

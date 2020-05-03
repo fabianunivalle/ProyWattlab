@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import './style/styles.css'
 
 import Language from './Language';
 
@@ -12,7 +13,7 @@ function Menu() {
                 <nav className="navbar navbar-expand-md navbar-dark fixed-top rounded-bottom" style={{ background: "linear-gradient(to right, #45B649, #DCE35B)" }}>
 
                     <Link to="/" className="navbar-header">
-                        <img className="img-responsive" src="../imagenes/imagotipo.png" style={{ height: '60px', width: 'auto', maxWidth: '200px' }} />
+                        <img className="img-responsive" src="../imagenes/imagotipo.png" style={{ width: 'auto', maxWidth: '200px' }} />
                     </Link>
 
                     <div className="btn-group rounded">
