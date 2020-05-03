@@ -110,13 +110,17 @@
       },
       "actives-panel":{
          "act_ext-title":"Ativos",
-         "act_ext-description":"Localização de transformadores e subestações",
+         "act_ext-description":"Transformadores e subestações",
          "act_int-title":"Transformadores e subestações",
          "act_int-description":"A continuação, você encontrará a localização dos transformadores e subestações.",
+         "act_msj-add": "O que você quer adicionar?",      
          "actives-panel-transformer":{
             "act_id-trfm":"ID Transformador",
             "act_sub-trfm":"Subestação",
             "act_grp-cnt-trfm":"Grupo de conexão",
+            "act_grp-cnt-trfm-star":"Estrela",
+            "act_grp-cnt-trfm-triangle":"Triângulo",
+            "act_grp-cnt-trfm-zigzag":"Ziguezague",
             "act_vprmy-trfm":"Tensão primária",
             "act_vmax-trfm":"Tensão máxima",
             "act_vsecond-trfm":"Tensão secundária",
