@@ -1,6 +1,5 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-
 import CardOpt from './CardOpt';
 import Encabezado from './Encabezado';
 
@@ -9,8 +8,8 @@ function Inicio() {
     return(
         <div className="container-fluid" style={{textAlign: "center", backgroundColor: "white", position: "absolute", top: "70px", left: "0px"}}>
             <Encabezado
-            titulo = {i18n.t('administration_panel')}
-            descripcion = {i18n.t('administration_panel_description')}/>
+                titulo = {i18n.t('administration_panel')}
+                descripcion = {i18n.t('administration_panel_description')}/>
             <div className="container">
               <div className="row justify-content-md-center" style={{marginBottom: "30px"}}>
                 <CardOpt
@@ -20,7 +19,6 @@ function Inicio() {
                 d1 = "M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 100-6 3 3 0 000 6zm-5.784 6A2.238 2.238 0 015 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 005 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"
                 icono = "bi bi-people-fill"
                 informacion = {i18n.t('users_description')}/>
-
                 <CardOpt
                 modulo = {i18n.t('actives')}
                 urlRuta = "/ModuloAdministrador/Transformadores"
@@ -28,7 +26,6 @@ function Inicio() {
                 d1 = "M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z"
                 icono ="bi bi-geo-alt"
                 informacion = {i18n.t('actives_description')}/>
-
                 <CardOpt
                 modulo = {i18n.t('reports')}
                 urlRuta = "/ModuloAdministrador/Reportes"
@@ -38,7 +35,6 @@ function Inicio() {
                 d2 = "M10 3.5a.5.5 0 01.5-.5h4a.5.5 0 01.5.5v4a.5.5 0 01-1 0V4h-3.5a.5.5 0 01-.5-.5z"
                 icono = "bi bi-graph-up"
                 informacion = {i18n.t('reports_description')}/>
-
                 <CardOpt
                 modulo = {i18n.t('payments')}
                 urlRuta = "/ModuloAdministrador/Pagos"
@@ -47,7 +43,6 @@ function Inicio() {
                 d2 = "M.125 5.17A.5.5 0 01.5 5H6a.5.5 0 01.5.5 1.5 1.5 0 003 0A.5.5 0 0110 5h5.5a.5.5 0 01.496.562l-.39 3.124A1.5 1.5 0 0114.117 10H1.883A1.5 1.5 0 01.394 8.686l-.39-3.124a.5.5 0 01.121-.393z"
                 icono = "bi bi-inboxes-fill"
                 informacion = {i18n.t('payments_description')}/>
-
                 <CardOpt
                 modulo = "Publicidad"
                 urlRuta = "/ModuloAdministrador/Publicidad"
@@ -56,7 +51,6 @@ function Inicio() {
                 d2 = "M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 007.5 2.5v11a.5.5 0 00.854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0016 13.5v-11a.5.5 0 00-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 00-.799-.34 12.96 12.96 0 00-2.073-.609z"
                 icono = "bi bi-book-half"
                 informacion = "Registro de la publicidad"/>
-
                 <CardOpt
                 modulo = "Clientes"
                 urlRuta = "/ModuloAdministrador/Clientes"
