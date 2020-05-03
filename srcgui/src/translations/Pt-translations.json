@@ -22,12 +22,25 @@
          "bill-homepage":{
             "bill_title":"Verifique sua fatura",
             "bill_description":"Para verificar seu extrato, faça o download ou pague sua fatura",
-            "bill_btn-ext":"Clique aqui"
+            "bill_dig-doc":"Digite o número do seu documento",
+            "bill_num-fact":"Fatura #",
+            "bill_prd":"Período",
+            "bill_valwouts":"Valor sem sobretaxa",
+            "bill_datewouts":"Data sem sobretaxa",
+            "bill_valws":"Valor com sobretaxa",
+            "bill_datews":"Data com sobretaxa",
+            "bill_state":"Estado",
+            "bill_datepay":"Data de pagamento",
+            "bill_valpay":"Valor pago",
+            "bill_fts":"Funcionalidades",
+            "bill_btn-wpay":"Sem pagar",
+            "bill_btn-pay":"Pago",
+            "bill_btn-search":"Pesquisar",
+            "bill_btn-clean":"Limpo"
          },
          "information-homepage":{
             "info_title":"Informação",
-            "info_description":"Informações sobre nossos produtos, serviços, preços, etc",
-            "info_btn-ext":"Clique aqui"
+            "info_description":"Informações sobre nossos produtos, serviços, preços, etc"
          },
          "pqrs-homepage":{
             "pqrs_title":"Petições, reclamações, reivindicações e sugestões",
@@ -35,12 +48,12 @@
             "pqrs_ptn-title":"Petição",
             "pqrs_ptn-description":"É direito fundamental de qualquer pessoa enviar solicitações respeitosas às autoridades por razões de interesse geral ou particular e obter sua pronta resolução.",
             "pqrs_cmpn-title":"Reclamação",
-            "pqrs_mpn-description":"É a manifestação de protesto, censura, descontentamento, não conformidade ou insatisfação que uma pessoa formula devido à violação de uma norma legal atual.",
+            "pqrs_cmpn-description":"É a manifestação de protesto, censura, descontentamento, não conformidade ou insatisfação que uma pessoa formula devido à violação de uma norma legal atual.",
             "pqrs_clm-title":"Reivindicar",
             "pqrs_clm-description":"É o direito de toda pessoa exigir, exigir ou exigir uma solução ou atenção satisfatória, seja por um motivo geral ou particular, em relação à prestação inadequada de um serviço ou à falta de atenção a uma solicitação.",
             "pqrs_sgtn-title":"Sugestão",
             "pqrs_sgtn-description":"É a expressão de idéias ou propostas que podem ajudar a melhorar um serviço ou o gerenciamento da mesma entidade.",
-            "pqrs_sndrq-description":"Para enviar sua solicitação, preencha os seguintes campos",
+            "pqrs_submrq-description":"Para enviar sua solicitação, preencha os seguintes campos",
             "pqrs_sbjt-title":"Assunto",
             "pqrs_email-title":"Correio eletrônico",
             "pqrs_dcptn-title":"Descrição",
@@ -50,6 +63,9 @@
          "news-homepage":{
             "news_title":"Notícias e atualizações",
             "news_description":"Aqui vai a seção de notícias..."
+         },
+         "button-homepage":{
+            "button_clkh":"Clique aqui"
          }
       },
       "login":{
@@ -87,7 +103,7 @@
          "usr_state":"Estado",
          "usr_date-init":"Data de início",
          "usr_opts":"Opções",
-         "usr_btn-find":"Pesquisar",
+         "usr_btn-search":"Pesquisar",
          "usr_btn-new":"Novo",
          "usr_btn-change":"Modificar",
          "usr_btn-inactive":"Desativar"

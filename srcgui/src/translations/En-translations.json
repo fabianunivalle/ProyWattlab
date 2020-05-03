@@ -22,12 +22,25 @@
          "bill-homepage":{
             "bill_title":"Check your bill",
             "bill_description":"To check your statement, download or pay your bill",
-            "bill_btn-ext":"Click here"
+            "bill_dig-doc":"Enter your ID number",
+            "bill_num-fact":"Bill #",
+            "bill_prd":"Period",
+            "bill_valwouts":"Value without surcharge",
+            "bill_datewouts":"Date without surcharge",
+            "bill_valws":"Value with surcharge",
+            "bill_datews":"Date with surcharge",
+            "bill_state":"State",
+            "bill_datepay":"Payment date",
+            "bill_valpay":"Value paid",
+            "bill_fts":"Features",
+            "bill_btn-wpay":"Without paying",
+            "bill_btn-pay":"Paid",
+            "bill_btn-search":"Search",
+            "bill_btn-clean":"Clean"
          },
          "information-homepage":{
             "info_title":"Information",
-            "info_description":"Information about our products, services, prices, etc",
-            "info_btn-ext":"Click here"
+            "info_description":"Information about our products, services, prices, etc"
          },
          "pqrs-homepage":{
             "pqrs_title":"Petitions, complaints, claims and suggestions",
@@ -35,12 +48,12 @@
             "pqrs_ptn-title":"Petition",
             "pqrs_ptn-description":"It is the fundamental right of every person to submit respectful requests to the authorities for reasons of general or particular interest, and to obtain their prompt resolution.",
             "pqrs_cmpn-title":"Complaint",
-            "pqrs_mpn-description":"It is the manifestation of protest, censorship, dissatisfaction, disagreement or dissatisfaction that a person formulates because of the breach of a current legal norm.",
+            "pqrs_cmpn-description":"It is the manifestation of protest, censorship, dissatisfaction, disagreement or dissatisfaction that a person formulates because of the breach of a current legal norm.",
             "pqrs_clm-title":"Claim",
             "pqrs_clm-description":"It is the right that every person has to demand, claim or sue a satisfactory solution or attention, whether for a general or particular reason, regarding the improper provision of a service or the lack of attention to a request.",
             "pqrs_sgtn-title":"Suggestion",
             "pqrs_sgtn-description":"It is the expression of ideas or proposals that can help to improve a service or the management of the same entity.",
-            "pqrs_sndrq-description":"To send your request, fill in the following fields",
+            "pqrs_submrq-description":"To send your request, fill in the following fields",
             "pqrs_sbjt-title":"Subject",
             "pqrs_email-title":"E-mail",
             "pqrs_dcptn-title":"Description",
@@ -50,6 +63,9 @@
          "news-homepage":{
             "news_title":"News and updates",
             "news_description":"Here goes the news section..."
+         },
+         "button-homepage":{
+            "button_clkh":"Click here"
          }
       },
       "login":{
@@ -87,7 +103,7 @@
          "usr_state":"State",
          "usr_date-init":"Start date",
          "usr_opts":"Options",
-         "usr_btn-find":"Find",
+         "usr_btn-search":"Search",
          "usr_btn-new":"New",
          "usr_btn-change":"Change",
          "usr_btn-inactive":"Inactivate"

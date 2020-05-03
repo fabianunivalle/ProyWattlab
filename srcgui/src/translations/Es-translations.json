@@ -22,12 +22,25 @@
          "bill-homepage":{
             "bill_title":"Consulta tu factura",
             "bill_description":"Para consultar tu extracto, descargar o pagar tu factura",
-            "bill_btn-ext":"Click aquí"
+            "bill_dig-doc":"Digite su número de documento",
+            "bill_num-fact":"Factura #",
+            "bill_prd":"Periodo",
+            "bill_valwouts":"Valor sin recargo",
+            "bill_datewouts":"Fecha sin recargo",
+            "bill_valws":"Valor con recargo",
+            "bill_datews":"Fecha con recargo",
+            "bill_state":"Estado",
+            "bill_datepay":"Fecha de pago",
+            "bill_valpay":"Valor pagado",
+            "bill_fts":"Funciones",
+            "bill_btn-wpay":"Sin pagar",
+            "bill_btn-pay":"Pagado",
+            "bill_btn-search":"Buscar",
+            "bill_btn-clean":"Limpiar"
          },
          "information-homepage":{
             "info_title":"Información",
-            "info_description":"Información acerca de nuestros productos, servicios, precios, etc",
-            "info_btn-ext":"Click aquí"
+            "info_description":"Información acerca de nuestros productos, servicios, precios, etc"
          },
          "pqrs-homepage":{
             "pqrs_title":"Peticiones, quejas, reclamos y sugerencias",
@@ -35,12 +48,12 @@
             "pqrs_ptn-title":"Petición",
             "pqrs_ptn-description":"Es el derecho fundamental que tiene toda persona a presentar solicitudes respetuosas a las autoridades por motivos de interés general o particular, y a obtener su pronta resolución.",
             "pqrs_cmpn-title":"Queja",
-            "pqrs_mpn-description":"Es la manifestación de protesta, censura, descontento, inconformidad o insatisfacción que formula una persona a causa del incumplimiento de una norma legal vigente.",
+            "pqrs_cmpn-description":"Es la manifestación de protesta, censura, descontento, inconformidad o insatisfacción que formula una persona a causa del incumplimiento de una norma legal vigente.",
             "pqrs_clm-title":"Reclamo",
             "pqrs_clm-description":"Es el derecho que tiene toda persona de exigir, reivindicar o demandar una solución o atención satisfactoria, ya sea por motivo general o particular, referente a la prestación indebida de un servicio o a la falta de atención de una solicitud.",
             "pqrs_sgtn-title":"Sugerencia",
             "pqrs_sgtn-description":"Es la manifestación de ideas o propuestas que pueden ayudar al mejoramiento de un servicio o la gestión de la misma entidad.",
-            "pqrs_sndrq-description":"Para enviar su solicitud, rellene los siguientes campos",
+            "pqrs_submrq-description":"Para enviar su solicitud, rellene los siguientes campos",
             "pqrs_sbjt-title":"Asunto",
             "pqrs_email-title":"Correo electrónico",
             "pqrs_dcptn-title":"Descripción",
@@ -50,6 +63,9 @@
          "news-homepage":{
             "news_title":"Noticias y novedades",
             "news_description":"Aquí va la sección de noticias..."
+         },
+         "button-homepage":{
+            "button_clkh":"Click aquí"
          }
       },
       "login":{
@@ -87,7 +103,7 @@
          "usr_state":"Estado",
          "usr_date-init":"Fecha de inicio",
          "usr_opts":"Opciones",
-         "usr_btn-find":"Buscar",
+         "usr_btn-search":"Buscar",
          "usr_btn-new":"Nuevo",
          "usr_btn-change":"Modificar",
          "usr_btn-inactive":"Inactivar"
