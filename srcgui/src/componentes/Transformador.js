@@ -14,10 +14,10 @@ function Transformador() {
                     <div className="form-group col-md-4">
                         <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_sub-trfm')}</label>
                         <select id="listaSubestacion" className="form-control">
-                            <option defaultValue>Sub1</option>
-                            <option>Sub2</option>
-                            <option>Sub3</option>
-                            <option>Sub4</option>
+                            <option defaultValue>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub1')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub2')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub3')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub4')}</option>
                         </select>
                     </div>
                     <div className="form-group col-md-4">
