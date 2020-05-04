@@ -1,6 +1,5 @@
 import React from 'react';
-import { Translation } from 'react-i18next'; // Necesario para traducir clases.
-//import { useTranslation } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { Carousel } from 'antd';
 import './style/slides.css';
 
@@ -21,11 +20,10 @@ class Slides extends React.Component {
                         <img src="../imagenes/slides/Slide1.jpg" className="d-block w-100" alt="..."></img>
                         <div className="carousel-caption d-none d-md-block d-sm-block d-xs-block">
                             <Translation>
-                                {(t, { i18n }) => <h3 style={{color: "white"}}>{t('slide1_title')}</h3>}
+                                {(t, { i18n }) => <h3 style={{color: "white"}}>{t('homepage.slides_homepage.sld2h_title')}</h3>}
                             </Translation>
-
                             <Translation>
-                                {(t, { i18n }) => <p>{t('slide1_text')}</p>}
+                                {(t, { i18n }) => <p>{t('homepage.slides_homepage.sld2h_description')}</p>}
                             </Translation>
                         </div>
                     </div>
@@ -33,7 +31,7 @@ class Slides extends React.Component {
                         <img src="../imagenes/slides/Slide0.jpg" className="d-block w-100" alt="..."></img>
                         <div className="carousel-caption d-none d-md-block d-xs-block">
                             <Translation>
-                                {(t, { i18n }) => <h1 style={{fontWeight: "bold"}}>{t('slide2_title')}</h1>}
+                                {(t, { i18n }) => <h1 style={{fontWeight: "bold"}}>{t('homepage.slides_homepage.sld3h_title')}</h1>}
                             </Translation>
                         </div>
                     </div>

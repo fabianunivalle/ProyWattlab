@@ -7,54 +7,54 @@ function PagosClientes() {
     return (
         <div className="container-fluid" style={{backgroundColor: "white", position: "absolute", top: "70px", left: "0px"}}>
             <Encabezado
-                titulo = "Panel de pagos de clientes"
-                descripcion = "En esta sección usted podrá registrar los pagos de los clientes"/>
+                titulo = {i18n.t('payments-panel.pay_int-title')}
+                descripcion = {i18n.t('payments-panel.pay_int-description')}/>
             <div className="container">
                 <div className="form-row">
                     <div className="form-group col-md-3">
-                        <label>ID Usuario</label>
+                        <label>{i18n.t('payments-panel.pay_id')}</label>
                         <input type="text" className="form-control" id="idUsuario"></input>
                     </div>
                     <div className="form-group col-md-3">
-                        <label># Referencia factura</label>
+                        <label>{i18n.t('payments-panel.pay_bill-ref')}</label>
                         <input type="text" className="form-control" id="consecutivoFactura"></input>
                     </div>
                     <div className="form-group col-md-3">
-                        <label>Fecha de pago</label>
+                        <label>{i18n.t('payments-panel.pay_pay-date')}</label>
                         <input type="date" className="form-control" id="fechaPago"></input>
                     </div>
                     <div className="form-group col-md-3">
-                        <label>Fecha vencimiento</label>
+                        <label>{i18n.t('payments-panel.pay_exp-date')}</label>
                         <input type="date" value="2020-07-22" className="form-control" id="fechaVencimiento"></input>
                     </div>
                     <div className="form-group col-md-3">
-                        <label>Tipo de pago</label>
+                        <label>{i18n.t('payments-panel.pay_pay-type')}</label>
                         <select id="formaPago" className="form-control">
                             <option defaultValue>--</option>
-                            <option>Efectivo</option>
-                            <option>Transferencia bancaria</option>
+                            <option>{i18n.t('payments-panel.pay_pay-type-cash')}</option>
+                            <option>{i18n.t('payments-panel.pay_pay-type-btransfer')}</option>
                         </select>
                     </div>
                     <div className="form-group col-md-3">
-                        <label>Valor pagado</label>
+                        <label>{i18n.t('payments-panel.pay_val-paid')}</label>
                         <input type="text" className="form-control" id="valorPagado"></input>
                     </div>
                     <div className="form-group col-md-3">
-                        <label>Seleccione el Banco</label>
+                        <label>{i18n.t('payments-panel.pay_slt-bank')}</label>
                         <select id="idBanco" className="form-control">
                             <option defaultValue>--</option>
-                            <option>Banco 1</option>
-                            <option>Banco 2</option>
-                            <option>Banco 3</option>
+                            <option>{i18n.t('payments-panel.pay_slt-bank-b1')}</option>
+                            <option>{i18n.t('payments-panel.pay_slt-bank-b2')}</option>
+                            <option>{i18n.t('payments-panel.pay_slt-bank-b3')}</option>
                         </select>
                     </div>
                     <div className="form-group col-md-3">
-                        <label>Estado factura</label>
-                        <input placeholder="Generada" type="text" className="form-control" id="estadoFactura" disabled></input>
+                        <label>{i18n.t('payments-panel.pay_bill-state')}</label>
+                        <input placeholder={i18n.t('payments-panel.pay_bill-state-generated')} type="text" className="form-control" id="estadoFactura" disabled></input>
                     </div>
                     <div className="col align-self-center">
-                        <button type="submit" className="btn btn-success" style={{marginBottom: "10px", width: "150px", marginRight: "10px"}}>Guardar</button>
-                        <button type="submit" className="btn btn-danger" style={{marginBottom: "10px", width: "150px"}}>Cancelar</button>
+                        <button type="submit" className="btn btn-success" style={{marginBottom: "10px", width: "150px", marginRight: "10px"}}>{i18n.t('payments-panel.pay_btn-save')}</button>
+                        <button type="submit" className="btn btn-danger" style={{marginBottom: "10px", width: "150px"}}>{i18n.t('payments-panel.pay_btn-cancel')}</button>
                     </div>
                 </div>
             </div>
