@@ -106,6 +106,7 @@
          "usr_btn-search":"Pesquisar",
          "usr_btn-new":"Novo",
          "usr_btn-change":"Modificar",
+         "usr_btn-activate":"Ativar",
          "usr_btn-inactive":"Desativar"
       },
       "actives-panel":{
