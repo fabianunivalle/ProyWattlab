@@ -71,8 +71,9 @@
       "login":{
          "login_title":"Iniciar sesión",
          "login_description":"Ingresa con tus datos a la zona de empleados, aquí puedes realizar más acciones y conocer los movimientos de los usuarios.",
-         "login_doc-title":"Número de documento",
+         "login_doc-title":"Usuario",
          "login_pass-title":"Contraseña",
+         "login_2pass-title": "Confirmar Contraseña",
          "login_pass-forget-description":"¿Has olvidado tu contraseña?",
          "login_btn-login":"Iniciar sesión",
          "login_btn-logout":"Cerrar sesión"
@@ -98,16 +99,23 @@
          "usr_int-title":"Panel de usuarios",
          "usr_int-description":"A continuación, encontrará el listado de usuarios",
          "usr_id":"ID",
+         "usr_user-name": "Usuario",
          "usr_name":"Nombre",
+         "usr_last-name": "Apellido",
+         "usr_email": "Coreo",
          "usr_type":"Tipo de usuario",
+         "usr_opts": "Opciones",
          "usr_state":"Estado",
+         "usr_profile": "Perfil",
+         "usr_change-user": "Modificar usuario",
+         "usr_new-user": "Nuevo usuario",
          "usr_date-init":"Fecha de inicio",
-         "usr_opts":"Opciones",
          "usr_btn-search":"Buscar",
          "usr_btn-new":"Nuevo",
          "usr_btn-change":"Modificar",
          "usr_btn-activate":"Activar",
-         "usr_btn-inactive":"Inactivar"
+         "usr_btn-inactive":"Inactivar",
+         "usr_btn-cancelar": "Cancelar"         
       },
       "actives-panel":{
          "act_ext-title":"Activos",
@@ -155,6 +163,16 @@
          "rpt_ext-description":"Reporte de ingresos de la empresa",
          "rpt_int-title":"Panel de reportes",
          "rpt_int-description":"A continuación, encontrará los reportes de ingresos económicos"
+      },
+      "publicidade": {
+         "pb_int-title": "Panel publicidad",
+         "pb_int-description": "A continuación, encontrará el listado de publicidad",
+         "pb_titulo": "Titulo",
+         "pb_description": "Descripcion",
+         "pb_url": "Url imagenes",
+         "pb_change": "Modificar Publicidad",
+         "pb_new": "Nueva Publicación",
+         "pb_btn-cancelar": "Cancelar"
       },
       "payments-panel":{
          "pay_ext-title":"Pagos",

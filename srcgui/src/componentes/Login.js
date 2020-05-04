@@ -70,7 +70,7 @@ function Login(props) {
 
                             </form>
                             <div style={{ marginTop: 15 }}>
-                                    <a href='http://127.0.0.1:8000/auth/account/password-reset/'" className="text-decoration-none">{i18n.t('login.login_pass-forget-description')}</a>
+                                    <a href='http://127.0.0.1:8000/auth/account/password-reset/'  className="text-decoration-none">{i18n.t('login.login_pass-forget-description')}</a>
                              </div>
                         </div>
                     </div>

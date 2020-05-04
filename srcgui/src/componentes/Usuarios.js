@@ -1,12 +1,10 @@
 
 import Encabezado from './Encabezado';
 import React, { Component } from 'react';
-import Table from './Table'
+import Table from '../container/Table'
 import ModificarUse from './ModificarUse'
 import BackService from '../store/PeticionesBack';
 const solicitudBack = new BackService();
-
-
 
 class Usuarios extends Component {
 
@@ -16,34 +14,34 @@ class Usuarios extends Component {
         solicitudBack.postRegisterUser(usuario
         ).then(res => {
             console.log(res)
-                this.solicitud()           
+            this.solicitud()
         })
             .catch(error => console.log(error))
         this.cerrarFormulario()
-       
+
     }
 
-    handleModificarUsuario = async (e ,usuario) =>{
+    handleModificarUsuario = async (e, usuario) => {
         e.preventDefault()
         solicitudBack.putUpdateUser(usuario
-            ).then(res => {
-                console.log(res)
-                    this.solicitud()           
-            })
-                .catch(error => console.log(error))
-                this.cerrarFormulario()
+        ).then(res => {
+            console.log(res)
+            this.solicitud()
+        })
+            .catch(error => console.log(error))
+        this.cerrarFormulario()
     }
-    
 
-    cambiarEstadoUser = (usuario) =>{
+
+    cambiarEstadoUser = (usuario) => {
         //console.log(usuario)
         solicitudBack.putUpdateUser(usuario
-            ).then(res => {
-                //console.log(res)
-                    this.solicitud()
-                    
-            })
-                .catch(error => console.log(error))
+        ).then(res => {
+            //console.log(res)
+            this.solicitud()
+
+        })
+            .catch(error => console.log(error))
     }
 
     //Con estos estados me doy cuenta que boton se presiono si el modificar o el nuevo
@@ -74,11 +72,11 @@ class Usuarios extends Component {
                     datos: res
                 })
                 this.buscador(this.state.buscador)
-                
+
             })
     }
 
-    
+
 
     cerrarFormulario = () => {
         this.setState({
@@ -92,7 +90,7 @@ class Usuarios extends Component {
         return (
             <React.Fragment>
                 <div className="container pre-scrollable" style={{ marginTop: "10px", maxHeight: "350px", marginBottom: "20px" }}>
-                    <Table t1='Id' t2='Usuaio' t3='Nombre' t4='Apellido' t5='Email' t6='Perfil' t7='Modificar' t8='Estado' tabla='usuario' datos={this.state.datos} modificar={this.modificar} cambiarEstado={this.cambiarEstadoUser}/>
+                    <Table t1='Id' t2='Usuaio' t3='Nombre' t4='Apellido' t5='Email' t6='Perfil' t7='Modificar' t8='Estado' tabla='usuario' datos={this.state.datos} modificar={this.modificar} cambiarEstado={this.cambiarEstadoUser} />
                 </div>
             </React.Fragment>
         )
@@ -112,10 +110,10 @@ class Usuarios extends Component {
                 apellido={this.state.apellido}
                 email={this.state.email}
                 perfil={this.state.perfil}
-                h1={'Modificar Usuario'}
-                nameBtn={'Modificar Usuario'}
-                cancelar={this.cerrarFormulario} 
-                />
+                h1={'users-panel.usr_change-user'}
+                nameBtn={'users-panel.usr_change-user'}
+                cancelar={this.cerrarFormulario}
+            />
             )
         }
         else if (this.state.banderaN === true) {
@@ -128,10 +126,10 @@ class Usuarios extends Component {
                 apellido={''}
                 email={''}
                 perfil={''}
-                h1={'Nuevo Usuario'}
-                nameBtn={'Crear Usuario'}
-                cancelar={this.cerrarFormulario} 
-               />
+                h1={'users-panel.usr_new-user'}
+                nameBtn={'users-panel.usr_new-user'}
+                cancelar={this.cerrarFormulario}
+            />
             )
         }
         return null
@@ -164,31 +162,30 @@ class Usuarios extends Component {
         this.setState({
             buscador: e.target.value.toLowerCase()
         })
-        this.buscador(e.target.value.toLowerCase());    
+        this.buscador(e.target.value.toLowerCase());
     }
 
     onKeyPressed = (e) => {
-        if(e.keyCode===8){
+        if (e.keyCode === 8) {
             this.solicitud()
         }
     }
 
     buscador = (letra) => {
-        const datosNuevos = this.state.datos.filter(function(fila){
-            if(fila.username.toLowerCase().indexOf(letra)!==-1){
+        const datosNuevos = this.state.datos.filter(function (fila) {
+            if (fila.username.toLowerCase().indexOf(letra) !== -1) {
                 return fila;
-            }else if(fila.first_name.toLowerCase().indexOf(letra)!==-1)
-            {
+            } else if (fila.first_name.toLowerCase().indexOf(letra) !== -1) {
                 return fila;
-            }   
+            }
         })
         this.setState({
             datos: datosNuevos,
-            resultado:datosNuevos.length
+            resultado: datosNuevos.length
         })
     }
 
-    default = (e) =>{
+    default = (e) => {
         e.preventDefault();
     }
 
@@ -196,8 +193,8 @@ class Usuarios extends Component {
         return (
             <div onKeyDown={this.onKeyPressed} className="container-fluid" style={{ backgroundColor: "white", position: "absolute", top: "70px", left: "0px" }}>
                 <Encabezado
-                    titulo='users_panel'
-                    descripcion='users_panel_description'
+                    titulo="users-panel.usr_int-title"
+                    descripcion="users-panel.usr_int-description"
                 />
                 <div className="container" style={{ justifyContent: "center" }}>
                     <form onSubmit={this.default} className="needs-validation" noValidate>
@@ -224,14 +221,14 @@ class Usuarios extends Component {
                                         <path fillRule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm7.5-3a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13V5.5a.5.5 0 01.5-.5z" clipRule="evenodd" />
                                         <path fillRule="evenodd" d="M13 7.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z" clipRule="evenodd" />
                                     </svg>
-                                &nbsp; Nuevo
-                            </button>
+                                    &nbsp;  Nuevo
+                                </button>
                             </div>
-                            
+
                             <div className="alert alert-success col-md-6">
                                 Resultados:
                                 <strong> {this.state.resultado} filas encontradas.</strong>
-                                         
+
                             </div>
                             {this.mostrarTable()}
                         </div>

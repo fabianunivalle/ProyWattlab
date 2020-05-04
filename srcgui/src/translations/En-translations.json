@@ -71,8 +71,9 @@
       "login":{
          "login_title":"Log in",
          "login_description":"Enter with your data to the employee area, here you can perform more actions and know the movements of users.",
-         "login_doc-title":"ID number",
+         "login_doc-title":"Username",
          "login_pass-title":"Password",
+         "login_2pass-title": "Confirm Password",
          "login_pass-forget-description":"Did you forget your password?",
          "login_btn-login":"Log in",
          "login_btn-logout":"Log out"
@@ -98,16 +99,21 @@
          "usr_int-title":"Users panel",
          "usr_int-description":"Below, you will find the list of users",
          "usr_id":"ID",
+         "usr_user-name": "Username",
          "usr_name":"Name",
+         "usr_last-name": "Last name",
+         "usr_email": "E-mail",
          "usr_type":"Type user",
+         "usr_opts": "Options",
          "usr_state":"State",
+         "usr_profile": "Profile",
          "usr_date-init":"Start date",
-         "usr_opts":"Options",
          "usr_btn-search":"Search",
          "usr_btn-new":"New",
          "usr_btn-change":"Change",
          "usr_btn-activate":"Activate",
-         "usr_btn-inactive":"Inactivate"
+         "usr_btn-inactive":"Inactivate",
+         "usr_btn-cancelar": "Cancel"
       },
       "actives-panel":{
          "act_ext-title":"Actives",
@@ -155,6 +161,16 @@
          "rpt_ext-description":"Company income report",
          "rpt_int-title":"Reports panel",
          "rpt_int-description":"Below, you will find the economic income reports"
+      },
+      "publicidade": {
+         "pb_int-title": "Advertising panel",
+         "pb_int-description": "Below you will find the advertising listing",
+         "pb_titulo": "Title",
+         "pb_description": "Description",
+         "pb_url": "Url images",
+         "pb_change": "Change Advertising",
+         "pb_new": "New Post",
+         "pb_btn-cancelar": "Cancel"
       },
       "payments-panel":{
          "pay_ext-title":"Payments",

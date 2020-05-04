@@ -71,8 +71,9 @@
       "login":{
          "login_title":"Iniciar sessão",
          "login_description":"Entre com seus dados na área de funcionários, aqui você pode executar mais ações e conhecer os movimentos dos usuários.",
-         "login_doc-title":"Número do documento",
+         "login_doc-title":"Nome do usuário",
          "login_pass-title":"Senha",
+         "login_2pass-title": "Confirmar Senha",
          "login_pass-forget-description":"Esqueceu sua senha?",
          "login_btn-login":"Iniciar sessão",
          "login_btn-logout":"Fechar sessão"
@@ -98,16 +99,21 @@
          "usr_int-title":"Painel usuários",
          "usr_int-description":"A continuação, encontrará a lista de usuários",
          "usr_id":"ID",
+         "usr_user-name": "Nome de usuário",
          "usr_name":"Nome",
+         "usr_last-name": "Sobrenome",
+         "usr_email": "Mail",
          "usr_type":"Tipo de usuário",
+         "usr_opts": "Opções",
          "usr_state":"Estado",
+         "usr_profile": "Perfil",
          "usr_date-init":"Data de início",
-         "usr_opts":"Opções",
          "usr_btn-search":"Pesquisar",
          "usr_btn-new":"Novo",
          "usr_btn-change":"Modificar",
          "usr_btn-activate":"Ativar",
-         "usr_btn-inactive":"Desativar"
+         "usr_btn-inactive":"Desativar",
+         "usr_btn-cancelar": "Cancelar"
       },
       "actives-panel":{
          "act_ext-title":"Ativos",
@@ -155,6 +161,16 @@
          "rpt_ext-description":"Relatório de receita da empresa",
          "rpt_int-title":"Painel relatórios",
          "rpt_int-description":"A continuação, você encontrará os relatórios de receita"
+      },
+      "publicidade": {
+         "pb_int-title": "Painel de publicidade",
+         "pb_int-description": "Abaixo você encontrará a listagem de publicidade",
+         "pb_titulo": "Titulo",
+         "pb_description": "Descrição",
+         "pb_url": "Url imagens",
+         "pb_change": "Modificar Publicidade",
+         "pb_new": "Nova Publicação",
+         "pb_btn-cancelar": "Cancelar"
       },
       "payments-panel":{
          "pay_ext-title":"Pagamentos",

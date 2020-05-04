@@ -1,6 +1,5 @@
 import React from 'react';
 import { Translation } from 'react-i18next';
-import { Carousel } from 'antd';
 import './style/slides.css';
 
 class Slides extends React.Component {

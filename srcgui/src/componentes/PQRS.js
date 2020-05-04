@@ -30,7 +30,7 @@ function PQRS() {
                 <Menu/>
             </div>
                 
-            <div className="container" style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
+            <div className="navbar-header" style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
                 <img className="img-fluid" alt="Responsive image" src='../imagenes/Banner.jpg'></img>
             </div>
 
