@@ -13,7 +13,7 @@ class ConsultaFactura extends React.Component {
                     <Menu/>
                 </div>
                 <div style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
-                    <img className="img-fluid" alt="Responsive image" src='../imagenes/ConsultaFactura.jpg'></img>
+                    <img className="img-fluid" alt="Responsive image" src='../imagenes/ConsultaFactura.jpg'/>
                 </div>
                 <div className="container-fluid" style={{marginTop: "10px", marginBottom: "10px"}}>
                     <div className="form-row justify-content-lg-center justify-content-md-center" style={{marginTop: "20px"}}>

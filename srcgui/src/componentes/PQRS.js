@@ -1,19 +1,25 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Layout } from 'antd';
-import axios from 'axios';
 import Footer from './Footer';
 import Menu from './Menu';
 
+import BackService from '../store/PeticionesBack'; //CENTRALIZACION DE LAS SOLICITUDES
+const solicitudBack = new BackService();
+
 const handleFormSubmit = e => {
     e.preventDefault();
-    axios.post('http://127.0.0.1:8000/api/pqrs/', {
+    
+    solicitudBack.postPQRS({ //Envio de datos al back
         "asunto": e.target.elements.asunto.value,
-        "contenido": e.target.elements.contenido.value, 
+        "contenido": e.target.elements.contenido.value,
         "email": e.target.elements.email.value
-    })  
-        .then(res => console.log(res.data))
-        .catch(error => console.log(error))
+    }).then(res => {console.log(res)})
+      .catch(error => {console.log(error)})
+    
+    e.target.elements.asunto.value="";
+    e.target.elements.contenido.value="";
+    e.target.elements.email.value="";
 }
 
 function PQRS() {
@@ -22,10 +28,12 @@ function PQRS() {
         <Layout className="layout">
             <div>
                 <Menu/>
-            </div>                
-            <div style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
-                <img class="img-fluid" alt="Responsive image" src='../imagenes/Banner.jpg'></img>
-            </div>            
+            </div>
+                
+            <div className="container" style={{marginTop: "70px", marginLeft: "0px", marginRight: "0px"}}>
+                <img className="img-fluid" alt="Responsive image" src='../imagenes/Banner.jpg'></img>
+            </div>
+
             <div className="container" style={{marginTop: "20px", marginBottom: "50px"}}>
                 <div className="row" style={{marginTop: "20px"}}>
                     <div className="col-lg-7" style={{textAlign: "left"}}>

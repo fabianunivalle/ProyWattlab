@@ -43,11 +43,12 @@ class MATransformadores extends Component {
       renderButton() {
         if(this.state.mode === 'trans') {
           return (
-              <button textAlign="center" className="btn btn-success" onClick={this.handleSub}>
+              <button className="btn btn-success" onClick={this.handleSub}>
                 <Translation>
                     {(t, { i18n }) => <p>{t('actives-panel.actives-panel-substation.act_btn-sub')}</p>}
                 </Translation>
               </button>
+              
           );
         } else {
           return (

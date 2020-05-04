@@ -10,7 +10,8 @@ import { Layout } from 'antd';
 import './style/recaptcha.css';
 
 //FUNCIONES DEL CAPTCHA
-let valido;
+let valido=null;
+
 var callback = function () {
     console.log('Done!');
 };
@@ -66,10 +67,11 @@ function Login(props) {
                                 <div>
                                     <button type="submit" className="btn btn-success btn-block">{i18n.t('login.login_btn-login')}</button>
                                 </div>
-                                <div style={{ marginTop: 15 }}>
-                                    <a href="#" className="text-decoration-none">{i18n.t('login.login_pass-forget-description')}</a>
-                                </div>
+
                             </form>
+                            <div style={{ marginTop: 15 }}>
+                                    <a href='http://127.0.0.1:8000/auth/account/password-reset/'" className="text-decoration-none">{i18n.t('login.login_pass-forget-description')}</a>
+                             </div>
                         </div>
                     </div>
                 </div>
