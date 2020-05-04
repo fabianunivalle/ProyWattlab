@@ -11,19 +11,15 @@ function PagosClientes() {
                 descripcion = "En esta sección usted podrá registrar los pagos de los clientes"/>
             <div className="container">
                 <div className="form-row">
-                    <div className="form-group col-md-3">
-                        <label>ID Usuario</label>
-                        <input type="text" className="form-control" id="idUsuario"></input>
-                    </div>
-                    <div className="form-group col-md-3">
+                    <div className="form-group col-md-4">
                         <label># Referencia factura</label>
                         <input type="text" className="form-control" id="consecutivoFactura"></input>
                     </div>
-                    <div className="form-group col-md-3">
+                    <div className="form-group col-md-4">
                         <label>Fecha de pago</label>
                         <input type="date" className="form-control" id="fechaPago"></input>
                     </div>
-                    <div className="form-group col-md-3">
+                    <div className="form-group col-md-4">
                         <label>Fecha vencimiento</label>
                         <input type="date" value="2020-07-22" className="form-control" id="fechaVencimiento"></input>
                     </div>

@@ -67,13 +67,14 @@ function Inicio() {
                 informacion = "Registro de clientes"/>
 
                 <CardOpt
-                modulo = "Bancos"
-                urlRuta = "/ModuloAdministrador/Bancos"
+                modulo = "Facturación"
+                urlRuta = "/ModuloAdministrador/Facturacion"
                 color = "#d381ff"
-                d1 = "M0 12.5A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5V6.85L8.129 8.947a.5.5 0 01-.258 0L0 6.85v5.65z"
-                d2 = "M0 4.5A1.5 1.5 0 011.5 3h13A1.5 1.5 0 0116 4.5v1.384l-7.614 2.03a1.5 1.5 0 01-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 016.5 1h3A1.5 1.5 0 0111 2.5V3h-1v-.5a.5.5 0 00-.5-.5h-3a.5.5 0 00-.5.5V3H5v-.5z"
+                d = "M9 1H4a2 2 0 00-2 2v10a2 2 0 002 2h5v-1H4a1 1 0 01-1-1V3a1 1 0 011-1h5v2.5A1.5 1.5 0 0010.5 6H13v2h1V6L9 1z"
+                d1 = "M13.5 10a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13v-1.5a.5.5 0 01.5-.5z"
+                d2 = "M13 12.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z"
                 icono = "bi bi-person-square"
-                informacion = "Pagos por bancos"/>
+                informacion = "Generador de facturas"/>
             </div>
           </div>
        </div>

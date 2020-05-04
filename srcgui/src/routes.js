@@ -18,6 +18,7 @@ import MATransformadores from './container/MATransformadores';
 import MAReportes from './container/MAReportes';
 import MAPagos from './container/MAPagos';
 import MAConfiguracion from './container/MAConfiguracion';
+import MAFacturacion from './container/MAFacturacion';
 
 function BaseRouter() {
     return (
@@ -36,6 +37,7 @@ function BaseRouter() {
                         <PrivateRoute exact path="/ModuloAdministrador/Reportes" component={MAReportes} />
                         <PrivateRoute exact path="/ModuloAdministrador/Pagos" component={MAPagos} />
                         <PrivateRoute exact path="/ModuloAdministrador/Configuracion" component={MAConfiguracion} />
+                        <PrivateRoute exact path="/ModuloAdministrador/Facturacion" component={MAFacturacion} />
                         <Route exact path="/Login" component={Login} />
                     </Switch>
                 </BrowserRouter>
