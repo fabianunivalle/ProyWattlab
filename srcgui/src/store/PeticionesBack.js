@@ -8,21 +8,24 @@ export default class BackService {
     ///PQRS
     postPQRS(solitAtent) {
         const url = `${API_URL}/api/pqrs/`;
-        return axios.post(url, solitAtent).then(res => res.data);
+        return axios.post(url, solitAtent).then(res => res.data)
+                                .catch(error => console.log(error));
     }
     //USUARIOS
     getListUser() {
         const url = `${API_URL}/auth/user/`;
         return axios.get(url).then(res => res.data)
-                             .catch(error =>console.log(error))                           
+                             .catch(error =>console.log(error));                           
     }
     postRegisterUser(user) {
         const url = `${API_URL}/auth/user/`;
-        return axios.post(url, user).then(res => res.data);
+        return axios.post(url, user).then(res => res.data)
+                            .catch(error => console.log(error));
     }
     putUpdateUser(user) {   
         const url = `${API_URL}/auth/account/change-active/${user.id}/`;
-        return axios.put(url, user).then(res => res.data);
+        return axios.put(url, user).then(res => res.data)
+                            .catch(error => console.log(error));
         
     }
     //PUBLICIDAD

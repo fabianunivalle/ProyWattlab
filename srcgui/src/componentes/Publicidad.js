@@ -1,6 +1,6 @@
 
 import Encabezado from './Encabezado';
-import Table from './Table';
+import Table from '../container/Table'
 import './style/slides.css';
 
 import React, { Component } from 'react';
@@ -86,8 +86,8 @@ class Publicidad extends Component {
                 titulo={this.state.titulo}
                 descripcion={this.state.descripcion}
                 url={this.state.url}
-                h1={'Modificar Publicidad'}
-                nameBtn={'Modificar Publicación'}
+                h1={'publicidade.pb_change'}
+                nameBtn={'publicidade.pb_change'}
                 cancelar={this.cerrarFormulario} />
             )
         }
@@ -100,8 +100,8 @@ class Publicidad extends Component {
                 dato2={''}
                 dato3={''}
                 dato4={''}
-                h1={'Nueva Publicación'}
-                nameBtn={'Crear Publicación'}
+                h1={'publicidade.pb_new'}
+                nameBtn={'publicidade.pb_new'}
                 cancelar={this.cerrarFormulario} />)
         }
         return null
@@ -174,8 +174,8 @@ class Publicidad extends Component {
         return (
             <div onKeyDown={this.onKeyPressed} className="container-fluid" style={{ backgroundColor: "white", position: "absolute", top: "70px", left: "0px" }}>
                 <Encabezado
-                    titulo="Panel de Publicidad"
-                    descripcion="A continuación, encontrará el listado de publicidad" />
+                    titulo="publicidade.pb_int-title"
+                    descripcion="publicidade.pb_int-description" />
                 <div className="container" style={{ justifyContent: "center" }}>
                     <form method="POST" onSubmit={this.default}>
                         <div className="form-row justify-content-between">

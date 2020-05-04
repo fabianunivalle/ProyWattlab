@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import FilaTable from './FilaTable';
-import { useTranslation } from 'react-i18next';
-
+import FilaTable from '../componentes/FilaTable';
 
 class Table extends Component {
 

@@ -64,13 +64,13 @@ function FilaTable(props) {
         if (props.estado === true) {
             return (
                 <td>
-                    <BotonInactivar cambiarEstado={props.cambiarEstado.bind(this, fila)} nombre='Inactivar' claseBoton='btn btn-danger' />
+                    <BotonInactivar cambiarEstado={props.cambiarEstado.bind(this, fila)} nombre='users-panel.usr_btn-inactive' claseBoton='btn btn-danger' />
                 </td>
             )
         } else {
             return (
                 <td>
-                    <BotonInactivar cambiarEstado={props.cambiarEstado.bind(this, fila)} nombre='Activar' claseBoton='btn btn-primary' />
+                    <BotonInactivar cambiarEstado={props.cambiarEstado.bind(this, fila)} nombre='users-panel.usr_btn-activate' claseBoton='btn btn-primary' />
                 </td>
             )
         }
