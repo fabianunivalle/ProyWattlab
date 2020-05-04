@@ -1,6 +1,6 @@
 import React from 'react';
 //CONFIGURACION
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, DefaultRoute } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import PrivateRoute from './privateRouter'
@@ -19,6 +19,8 @@ import MAReportes from './container/MAReportes';
 import MAPagos from './container/MAPagos';
 import MAConfiguracion from './container/MAConfiguracion';
 import MAFacturacion from './container/MAFacturacion';
+import MAPublicidad from './container/MAPublicidad';
+import PageNotFound from './container/PageNotFound';
 
 function BaseRouter() {
     return (
@@ -39,6 +41,15 @@ function BaseRouter() {
                         <PrivateRoute exact path="/ModuloAdministrador/Configuracion" component={MAConfiguracion} />
                         <PrivateRoute exact path="/ModuloAdministrador/Facturacion" component={MAFacturacion} />
                         <Route exact path="/Login" component={Login} />
+                        <Route exact path="/ModuloAdministrador" component={ModuloAdministrador} />
+                        <Route exact path="/ModuloAdministrador/Dashboard" component={MADashboard} />
+                        <Route exact path="/ModuloAdministrador/Users" component={MAUsers} />
+                        <Route exact path="/ModuloAdministrador/Transformadores" component={MATransformadores} />
+                        <Route exact path="/ModuloAdministrador/Reportes" component={MAReportes} />
+                        <Route exact path="/ModuloAdministrador/Pagos" component={MAPagos} />
+                        <Route exact path="/ModuloAdministrador/Configuracion" component={MAConfiguracion} />
+                        <Route exact path="/ModuloAdministrador/Publicidad" component={MAPublicidad} />
+                        <Route component={PageNotFound} />
                     </Switch>
                 </BrowserRouter>
             </Provider>

@@ -1,7 +1,6 @@
 import axios from 'axios';
 import * as actionTypes from './actionTypes';
 
-
 export const authStart = () => {
     return {
         type: actionTypes.AUTH_START
@@ -30,47 +29,28 @@ export const authlogout = () => {
 
 
 export const authLogin = (username, password) => {
-    const config={
-        headers:{
+    const config = {
+        headers: {
             "Content-Type": "application/json"
         }
     }
     return dispatch => {
         dispatch(authStart());
-        //axios.post('http://127.0.0.1:8000/auth/login', {
-        //    username: username,
-        //    password: password
-        //}, config)
-        //    .then(res => {
-        //        const token = res.data.token;
-        //        console.log(token);
-        //        localStorage.setItem('token', token);
-        //        localStorage.setItem('authenticate', true);
-                  dispatch(authSuccess('hbcjsndasnd283283'));
-        //    })
-        //    .catch(err => {
-        //        dispatch(authFail(err));
-        //    })
-    }
-}
 
-export const authSignup = (username, email, first_name, last_name, password) => {
-    return dispatch => {
-        dispatch(authStart());
-        axios.post('http://127.0.0.1:8000/auth/registerUser', {
-            first_name: first_name,
-            last_name: last_name,
+        axios.post('http://127.0.0.1:8000/auth/login/', {
             username: username,
-            email: email,
-            password: password,
-        })
+            password: password
+        }, config)
             .then(res => {
-                const token = res.data.key;
+                const token = res.data.token;
                 localStorage.setItem('token', token);
-                dispatch(authStart(token));
+                localStorage.setItem('authenticate', true);
+                dispatch(authSuccess(token));
             })
             .catch(err => {
                 dispatch(authFail(err));
-            })
+            }) 
     }
 }
+
+

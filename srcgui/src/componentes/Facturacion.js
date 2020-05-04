@@ -1,7 +1,7 @@
 import React from 'react';
 import Encabezado from './Encabezado';
 import i18n from '../i18next';
-import BotonInactivar from './BotonInactivar';
+import BotonVisualizar from './BotonVisualizar';
 import BotonModificar from './BotonModificar';
 
 class Facturacion extends React.Component {
@@ -60,7 +60,7 @@ class Facturacion extends React.Component {
                                     <td>
                                         <BotonModificar/>
                                         &nbsp;
-                                        <BotonInactivar/>
+                                        <BotonVisualizar/>
                                     </td>
                                 </tr>
                             </tbody>

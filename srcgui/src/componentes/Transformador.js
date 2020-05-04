@@ -13,64 +13,64 @@ function Transformador() {
                     <div className="form-group col-md-6">
                         <label htmlFor="">Subestación</label>
                         <select id="listaSubestacion" className="form-control">
-                            <option defaultValue>Sub1</option>
-                            <option>Sub2</option>
-                            <option>Sub3</option>
-                            <option>Sub4</option>
+                            <option defaultValue>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub1')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub2')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub3')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub4')}</option>
                         </select>
                     </div>
                     <div className="form-group col-md-6">
                         <label htmlFor="">Grupo de conexión</label>
                         <select id="grupoConexion" className="form-control">
-                            <option defaultValue>Estrella</option>
-                            <option>Triángulo</option>
-                            <option>Zig Zag</option>
+                            <option defaultValue>{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm-star')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm-triangle')}</option>
+                            <option>{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm-zigzag')}</option>
                         </select>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-group col-md-4">
-                        <label htmlFor="">Tensión primaria</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_vprmy-trfm')}</label>
                         <input type="text" className="form-control" id="tensionPrimaria"></input>
                     </div>
                     <div className="form-group col-md-4">
-                        <label htmlFor="">Tensión máxima</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_vmax-trfm')}</label>
                         <input type="text" className="form-control" id="tensionMaxima"></input>
                     </div>
                     <div className="form-group col-md-4">
-                        <label htmlFor="">Tensión secundaria</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_vsecond-trfm')}</label>
                         <input type="text" className="form-control" id="tensionSecundaria"></input>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-group col-md-4">
-                        <label htmlFor="">Potencia nominal</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_npw-trfm')}</label>
                         <input type="text" className="form-control" id="potenciaNominal"></input>
                     </div>
                     <div className="form-group col-md-4">
-                        <label htmlFor="">Intensidad nominal</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_nity-trfm')}</label>
                         <input type="text" className="form-control" id="intensidadNominal"></input>
                     </div>
                     <div className="form-group col-md-4">
-                        <label htmlFor="">Tensión cortocircuito</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_scvltg-trfm')}</label>
                         <input type="text" className="form-control" id="tensionCortocircuito"></input>
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-group col-md-6">
-                        <label htmlFor="">Relación de transformador</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_rt-trfm')}</label>
                         <input type="text" className="form-control" id="relacionTransformador"></input>
                     </div>
                     <div className="form-group col-md-6">
-                        <label htmlFor="">Ubicación</label>
+                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_lctn-trfm')}</label>
                         <button type="submit" id="seleccionEnMapa" className="btn btn-danger btn-block">
                             <svg className="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
                             </svg>
-                        &nbsp; Seleccionar en el mapa</button>
+                        &nbsp; {i18n.t('actives-panel.actives-panel-transformer.act_btn-slt-map-trfm')}</button>
                     </div>
                 </div>
-                <button type="submit" id="añadir" className="btn btn-success btn-block">Añadir</button>
+                <button type="submit" id="añadir" className="btn btn-success btn-block">{i18n.t('actives-panel.actives-panel-transformer.act_btn-add-trfm')}</button>
             </form>
         </div>
     );
