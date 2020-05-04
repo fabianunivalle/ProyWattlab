@@ -6,12 +6,11 @@ function Transformador() {
     return (
         <div className="container">
             <form>
-                <div className="form-row">
-                    <div className="form-group col-md-4">
-                        <label htmlFor="">ID Transformador</label>
-                        <input type="text" className="form-control" id="idtransformador"></input>
+                <div className="form-row"> 
+                    <div className="form-group col-md-12" style={{textAlign: "center"}}>
+                        <h4>Creación de transformador</h4>
                     </div>
-                    <div className="form-group col-md-4">
+                    <div className="form-group col-md-6">
                         <label htmlFor="">Subestación</label>
                         <select id="listaSubestacion" className="form-control">
                             <option defaultValue>Sub1</option>
@@ -20,7 +19,7 @@ function Transformador() {
                             <option>Sub4</option>
                         </select>
                     </div>
-                    <div className="form-group col-md-4">
+                    <div className="form-group col-md-6">
                         <label htmlFor="">Grupo de conexión</label>
                         <select id="grupoConexion" className="form-control">
                             <option defaultValue>Estrella</option>

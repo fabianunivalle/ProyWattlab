@@ -7,6 +7,9 @@ function Subestacion() {
         <div className="container">
             <form>
                 <div className="form-row">
+                    <div className="form-group col-md-12" style={{textAlign: "center"}}>
+                        <h4>Creación de subestación</h4>
+                    </div>
                     <div className="form-group col-md-12">
                         <label htmlFor="">Nombre</label>
                         <input type="text" className="form-control" id="nombreSubestacion"></input>
