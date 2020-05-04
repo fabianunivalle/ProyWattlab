@@ -87,4 +87,4 @@ class SubEstacion(models.Model):
 
 class Ciudad(models.Model):
     cnsctvo_dprtmnto = models.ForeignKey('Departamento',on_delete=models.CASCADE)
-    nmbre_cdd = models.CharField(max_length=50)
+    nmbre_cdd = models.CharField(max_length=150)
