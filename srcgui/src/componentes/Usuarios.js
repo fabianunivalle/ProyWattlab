@@ -9,8 +9,8 @@ function Usuarios() {
     return (
         <div className="container-fluid" style={{backgroundColor: "white", position: "absolute", top: "70px", left: "0px"}}>
             <Encabezado
-            titulo = {i18n.t('users-panel.usr_int-title')}
-            descripcion = {i18n.t('users-panel.usr_int-description')}/>
+            titulo = {i18n.t('users_panel')}
+            descripcion = {i18n.t('users_panel_description')}/>
             <div className="container" style={{justifyContent: "center"}}>
                 <form>
                     <div className="form-row justify-content-between">
@@ -28,7 +28,7 @@ function Usuarios() {
                             </div>
                         </div>
                         <div className="col-lg-1 col-md-1 col-auto mr-auto">
-                            <button className="btn btn-success" type="button">{i18n.t('users-panel.usr_btn-search')}</button>
+                            <button className="btn btn-success" type="button">Buscar</button>
                         </div>
                         <div className="col-auto">
                             <button className="btn btn-danger" type="button">
@@ -36,7 +36,7 @@ function Usuarios() {
                                 <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm7.5-3a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13V5.5a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
                                 <path fill-rule="evenodd" d="M13 7.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z" clip-rule="evenodd"/>
                             </svg>
-                                &nbsp; {i18n.t('users-panel.usr_btn-new')}
+                                &nbsp; Nuevo
                             </button>
                         </div>
                     </div>
@@ -44,12 +44,12 @@ function Usuarios() {
                         <table className="table">
                             <thead className="thead-dark">
                                 <tr>
-                                    <th scope="col">{i18n.t('users-panel.usr_id')}</th>
-                                    <th scope="col">{i18n.t('users-panel.usr_name')}</th>
-                                    <th scope="col">{i18n.t('users-panel.usr_type')}</th>
-                                    <th scope="col">{i18n.t('users-panel.usr_state')}</th>
-                                    <th scope="col">{i18n.t('users-panel.usr_date-init')}</th>
-                                    <th scope="col">{i18n.t('users-panel.usr_opts')}</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Tipo</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Fecha inicio</th>
+                                    <th scope="col">Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Translation } from 'react-i18next'; 
+import { Translation, withTranslation } from 'react-i18next';
+import i18n from "i18next";
 import Sidebar from '../componentes/Sidebar';
 import { Layout } from 'antd';
 import Maps from '../componentes/Maps'
@@ -80,11 +81,9 @@ class MATransformadores extends Component {
                                 </div>
                                 <div className="form-row">
                                   <div className="input-group">
-                                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{textAlign: "center"}} type="text" readOnly className="form-control-plaintext" id="staticEmail2" value="¿Qué desea añadir?">
-                                      <Translation>
-                                        {(t, { i18n }) => <p>{t('actives-panel.act_msj-add')}</p>}
-                                      </Translation>
-                                    </div>
+                                    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <input style={{textAlign: "center"}} type="text" readOnly className="form-control-plaintext" id="staticEmail2" value="¿Qué desea añadir?" placeholder={i18n.t('actives-panel.act_msj-add')}></input>
+                                    </div>                                  
                                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{justifyContent: "center"}}>
                                       {this.renderButton()}
                                     </div>
@@ -102,4 +101,4 @@ class MATransformadores extends Component {
     }
 }
 
-export default MATransformadores;
+export default withTranslation()(MATransformadores);

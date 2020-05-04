@@ -1,5 +1,6 @@
 import React from 'react';
-import { Translation } from 'react-i18next';
+import { Translation, withTranslation } from 'react-i18next';
+import i18n from "i18next";
 import { Layout } from 'antd';
 import Menu from './Menu';
 import Footer from './Footer';
@@ -17,9 +18,7 @@ class ConsultaFactura extends React.Component {
                 <div className="container-fluid" style={{marginTop: "10px", marginBottom: "10px"}}>
                     <div className="form-row justify-content-lg-center justify-content-md-center" style={{marginTop: "20px"}}>
                         <div className="col-lg-3 col-md-4 col-sm-3 col-xs-12">
-                            <Translation>
-                                {(t, { i18n }) => <p>{t('homepage.bill-homepage.bill_dig-doc')}</p>}
-                            </Translation>
+                            <p>{i18n.t('homepage.bill-homepage.bill_dig-doc')}</p>
                         </div>
                         <div className="col-lg-3 col-md-4 col-sm-3 col-xs-12">
                             <input className="form-control" placeholder="" style={{marginBottom: "10px"}}></input>
@@ -184,4 +183,4 @@ class ConsultaFactura extends React.Component {
     }
 }
 
-export default ConsultaFactura;
+export default withTranslation()(ConsultaFactura);
