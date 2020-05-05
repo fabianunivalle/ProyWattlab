@@ -97,20 +97,19 @@ function Sidebar(props) {
             </li>
             <li className="nav-item active">
                 <a className="nav-link" style={{color: "white"}} href="/ModuloAdministrador/Publicidad">
-                  <svg fill="white" height="20px" viewBox="" width="20px" xmlns="http://www.w3.org/2000/svg"><path d=""/></svg>
+                <svg class="bi bi-flag-fill" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3.5 1a.5.5 0 01.5.5v13a.5.5 0 01-1 0v-13a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M3.762 2.558C4.735 1.909 5.348 1.5 6.5 1.5c.653 0 1.139.325 1.495.562l.032.022c.391.26.646.416.973.416.168 0 .356-.042.587-.126a8.89 8.89 0 00.593-.25c.058-.027.117-.053.18-.08.57-.255 1.278-.544 2.14-.544a.5.5 0 01.5.5v6a.5.5 0 01-.5.5c-.638 0-1.18.21-1.734.457l-.159.07c-.22.1-.453.205-.678.287A2.719 2.719 0 019 9.5c-.653 0-1.139-.325-1.495-.562l-.032-.022c-.391-.26-.646-.416-.973-.416-.833 0-1.218.246-2.223.916A.5.5 0 013.5 9V3a.5.5 0 01.223-.416l.04-.026z" clip-rule="evenodd"/>
+                </svg>      
                   &nbsp; {i18n.t('buttons-panel.buttons_btn-advertising')}
                 </a>
             </li>
             <li className="nav-item active">
                 <a className="nav-link" style={{color: "white"}} href="/ModuloAdministrador/Clientes">
-                  <svg fill="white" height="20px" viewBox="" width="20px" xmlns="http://www.w3.org/2000/svg"><path d=""/></svg>
+                <svg class="bi bi-people-fill" width="20px" height="20px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 100-6 3 3 0 000 6zm-5.784 6A2.238 2.238 0 015 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 005 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" clip-rule="evenodd"/>
+                </svg>
                   &nbsp; {i18n.t('buttons-panel.buttons_btn-customers')}
-                </a>
-            </li>
-            <li className="nav-item active">
-                <a className="nav-link" style={{color: "white"}} href="/ModuloAdministrador/Facturacion">
-                  <svg fill="white" height="20px" viewBox="" width="20px" xmlns="http://www.w3.org/2000/svg"><path d=""/></svg>
-                  &nbsp; Facturación
                 </a>
             </li>
             <li className="nav-item active">

@@ -64,16 +64,6 @@ function Inicio() {
                 d2 = "M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 100-6 3 3 0 000 6z"
                 icono = "bi bi-person-square"
                 informacion = {i18n.t('customers-panel.cst_ext-description')}/>
-                
-                <CardOpt
-                modulo = "Facturación"
-                urlRuta = "/ModuloAdministrador/Facturacion"
-                color = "#d381ff"
-                d = "M9 1H4a2 2 0 00-2 2v10a2 2 0 002 2h5v-1H4a1 1 0 01-1-1V3a1 1 0 011-1h5v2.5A1.5 1.5 0 0010.5 6H13v2h1V6L9 1z"
-                d1 = "M13.5 10a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13v-1.5a.5.5 0 01.5-.5z"
-                d2 = "M13 12.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z"
-                icono = "bi bi-person-square"
-                informacion = "Generador de facturas"/>
             </div>
           </div>
        </div>
