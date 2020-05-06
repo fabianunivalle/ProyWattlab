@@ -1,13 +1,19 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from  django.db.models.signals import post_save
 # Create your models here.
 
 class TipoIdentificacion(models.Model):
     dscrpcn_tpo_idntfcn = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.dscrpcn_tpo_idntfcn
+
 class TipoCliente(models.Model):
     dscrpcn_tpo_clnte = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.dscrpcn_tpo_clnte
 
 class Tarifa(models.Model):
     vlr_kwh = models.FloatField()
@@ -15,8 +21,14 @@ class Tarifa(models.Model):
     fn_vgnca = models.DateField()
     obsrvcn = models.CharField(max_length=150)
 
+    def __str__(self):
+        return self.obsrvcn
+
 class Departamento(models.Model):
     nmbre_dprtmnto = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.nmbre_dprtmnto
 
 class Transformador(models.Model):
     nmro_unco_idntfccn_sub_estcn = nmro_unco_idntfccn_sub_estcn = models.ForeignKey('SubEstacion',on_delete=models.CASCADE)
@@ -30,6 +42,10 @@ class Transformador(models.Model):
     grpo_cnxn = models.IntegerField()
     lngtd = models.FloatField()
     lttd = models.FloatField()
+    obsrvcn = models.CharField(max_length=150, default = '')
+
+    def __str__(self):
+        return self.obsrvcn
 
 class Pago(models.Model):
     nmro_unco_idntfccn_bnco = models.ForeignKey('Banco',on_delete=models.CASCADE)
@@ -37,12 +53,19 @@ class Pago(models.Model):
     vlr_pgdo = models.FloatField()
     nmro_unco_idntfccn_usro = models.ForeignKey(User,on_delete=models.CASCADE)
     fcha_pgo = models.DateField()
+    obsrvcn = models.CharField(max_length=150, default = '')
+
+    def __str__(self):
+        return self.obsrvcn
 
 class Banco(models.Model):
     nmbre_bnco = models.CharField(max_length=50)
     drccn = models.CharField(max_length=150)
     tlfno = models.CharField(max_length=50)
     cnsctvo_cdd = models.ForeignKey('Ciudad',on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nmbre_bnco
 
 class Cliente(models.Model):
     cnsctvo_tpo_idntfcn = models.ForeignKey('TipoIdentificacion',on_delete=models.CASCADE)
@@ -54,20 +77,31 @@ class Cliente(models.Model):
     fcha_ncmnto = models.DateField()
     cnsctvo_tpo_clnte = models.ForeignKey('TipoCliente',on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.prmr_nmbre+' '+self.sgndo_nmbre+' '+self.prmr_aplldo+' '+self.sgndo_aplldo
+
 class Contrato(models.Model):
     nmro_unco_idntfccn_clnte = models.IntegerField()
     estrt_scl = models.CharField(max_length=150)
     drccn = models.CharField(max_length=150)
     cnsctvo_cdd = models.ForeignKey('Ciudad',on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.drccn
+
 class Consumo(models.Model):
     nmro_unco_idntfccn_cntrto = models.ForeignKey('Contrato',on_delete=models.CASCADE)
     kwh = models.IntegerField()
     prdo_cnsmo = models.IntegerField()
+    obsrvcn = models.CharField(max_length=150, default = '')
+
+    def __unicode__(self):
+        return self.obsrvcn
+    
 
 class Facturacion(models.Model):
     cnsctvo_cnsmo = models.ForeignKey('Consumo',on_delete=models.CASCADE)
-    cnsctvo_trfa = models.FloatField()
+    cnsctvo_trfa = models.ForeignKey('Tarifa',on_delete=models.CASCADE)
     vlr_cnsmo = models.FloatField()
     vlr_intrss_mra = models.FloatField()
     vlr_rcnxn = models.FloatField()
@@ -75,7 +109,11 @@ class Facturacion(models.Model):
     fcha_lmte_pgo = models.DateField()
     cntdd_fctrs_pndts = models.IntegerField()
     fcha_crte_srvco = models.DateField()
-    estdo_fctra = models.BooleanField()
+    estdo_fctra = models.BooleanField(default = 0)
+    obsrvcn = models.CharField(max_length=150, default = '')
+
+    def __str__(self):
+        return self.obsrvcn
 
 class SubEstacion(models.Model):
     nombre = models.CharField(max_length=50)
@@ -85,6 +123,12 @@ class SubEstacion(models.Model):
     lngtd = models.FloatField()
     lttd = models.FloatField()
 
+    def __str__(self):
+        return self.nombre
+
 class Ciudad(models.Model):
     cnsctvo_dprtmnto = models.ForeignKey('Departamento',on_delete=models.CASCADE)
     nmbre_cdd = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.nmbre_cdd
