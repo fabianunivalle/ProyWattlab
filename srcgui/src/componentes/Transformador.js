@@ -6,21 +6,20 @@ function Transformador() {
     return (
         <div className="container">
             <form>
-                <div className="form-row">
-                    <div className="form-group col-md-4">
-                        <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_id-trfm')}</label>
-                        <input type="text" className="form-control" id="idtransformador"></input>
+                <div className="form-row"> 
+                    <div className="form-group col-md-12" style={{textAlign: "center"}}>
+                        <h4>{i18n.t('actives-panel.actives-panel-transformer.act_create-trfm')}</h4>
                     </div>
-                    <div className="form-group col-md-4">
+                    <div className="form-group col-md-6">
                         <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_sub-trfm')}</label>
                         <select id="listaSubestacion" className="form-control">
-                            <option defaultValue>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub1')}</option>
-                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub2')}</option>
-                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub3')}</option>
-                            <option>{i18n.t('actives-panel.actives-panel-transformer.act-sub-trfm-sub4')}</option>
+                            <option defaultValue>Subestación 1 </option>
+                            <option>Subestación 2</option>
+                            <option>Subestación 3</option>
+                            <option>Subestación 4</option>
                         </select>
                     </div>
-                    <div className="form-group col-md-4">
+                    <div className="form-group col-md-6">
                         <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm')}</label>
                         <select id="grupoConexion" className="form-control">
                             <option defaultValue>Estrella</option>
