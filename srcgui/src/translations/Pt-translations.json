@@ -107,6 +107,8 @@
          "usr_opts": "Opções",
          "usr_state":"Estado",
          "usr_profile": "Perfil",
+         "usr_change-user": "Modificar usuário",
+         "usr_new-user": "Novo usuário",
          "usr_date-init":"Data de início",
          "usr_btn-search":"Pesquisar",
          "usr_btn-new":"Novo",

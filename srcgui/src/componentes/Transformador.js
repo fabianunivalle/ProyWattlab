@@ -23,9 +23,9 @@ function Transformador() {
                     <div className="form-group col-md-4">
                         <label htmlFor="">{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm')}</label>
                         <select id="grupoConexion" className="form-control">
-                            <option defaultValue>{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm-star')}</option>
-                            <option>{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm-triangle')}</option>
-                            <option>{i18n.t('actives-panel.actives-panel-transformer.act_grp-cnt-trfm-zigzag')}</option>
+                            <option defaultValue>Estrella</option>
+                            <option>Triangulo</option>
+                            <option>Zigzag</option>
                         </select>
                     </div>
                 </div>
