@@ -25,7 +25,7 @@ class Cliente(models.Model):
     nmro_idntfccn = models.CharField(max_length=11)
     prmr_nmbre = models.CharField(max_length=50)
     prmr_aplldo = models.CharField(max_length=50)
-    fcha_ncmnto = models.DateField(null= True)
+    fcha_ncmnto = models.DateField(null=True, blank=True)
     tpo_idntfcn = models.ForeignKey(TipoId, on_delete=models.CASCADE)
     tpT_clnte = models.ForeignKey(TipoCliente, on_delete=models.CASCADE)
     
@@ -34,8 +34,9 @@ class Cliente(models.Model):
     
 class Contrato (models.Model): 
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
-    estrt_scl = models.CharField(max_length=2, default='0')
+    estrt_scl = models.PositiveIntegerField(default=0)
     drccn = models.CharField(max_length=150, default='')
+    estado= models.BooleanField(default=True)
     
     def __str__(self):
         return self.drccn
