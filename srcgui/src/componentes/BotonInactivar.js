@@ -6,10 +6,9 @@ function BotonInactivar(props) {
 
     const [icono,setIcon] = useState(
         {d:'',
-         d1:''   
+         d1:'',
+         d2: ''   
         })
-
-    
 
     useEffect(() => {
         const mostrarIcono = () =>{

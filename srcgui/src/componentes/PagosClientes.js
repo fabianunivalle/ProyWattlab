@@ -11,20 +11,16 @@ function PagosClientes() {
                 descripcion = {i18n.t('payments-panel.pay_int-description')}/>
             <div className="container">
                 <div className="form-row">
-                    <div className="form-group col-md-3">
-                        <label>{i18n.t('payments-panel.pay_id')}</label>
-                        <input type="text" className="form-control" id="idUsuario"></input>
-                    </div>
-                    <div className="form-group col-md-3">
-                        <label>{i18n.t('payments-panel.pay_bill-ref')}</label>
+                    <div className="form-group col-md-4">
+                        <label># Referencia factura</label>
                         <input type="text" className="form-control" id="consecutivoFactura"></input>
                     </div>
-                    <div className="form-group col-md-3">
-                        <label>{i18n.t('payments-panel.pay_pay-date')}</label>
+                    <div className="form-group col-md-4">
+                        <label>Fecha de pago</label>
                         <input type="date" className="form-control" id="fechaPago"></input>
                     </div>
-                    <div className="form-group col-md-3">
-                        <label>{i18n.t('payments-panel.pay_exp-date')}</label>
+                    <div className="form-group col-md-4">
+                        <label>Fecha vencimiento</label>
                         <input type="date" value="2020-07-22" className="form-control" id="fechaVencimiento"></input>
                     </div>
                     <div className="form-group col-md-3">

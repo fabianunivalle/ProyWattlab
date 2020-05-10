@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     
     'apps.publicidad',
     'apps.accounts',
+    'apps.factura',
 
 ]
 
