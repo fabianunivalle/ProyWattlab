@@ -97,7 +97,27 @@ class Consumo(models.Model):
 
     def __unicode__(self):
         return self.obsrvcn
-    
+        
+    def post_save(self, **kwargs):
+        fact = Facturacion()
+        tari = Tarifa(vlr_kwh = 300,    inco_vgnca = '2020-02-02',    fn_vgnca = '2020-02-02',    obsrvcn = 'models.CharField(max_length=150))')
+        fact.cnsctvo_cnsmo = self
+        fact.cnsctvo_trfa = tari
+        fact.vlr_cnsmo = self.kwh*tari.vlr_kwh
+        fact.vlr_intrss_mra = 0
+        fact.vlr_rcnxn = 0
+        fact.vlr_ttl = fact.vlr_cnsmo+fact.vlr_intrss_mra+fact.vlr_rcnxn
+        fact.fcha_lmte_pgo = '2020-02-02'
+        fact.cntdd_fctrs_pndts = 1
+        fact.fcha_crte_srvco = '2020-02-02'
+        fact.save()
+
+# def save_consumo(sender, instance, **kwargs):
+#     fact = Facturacion()
+#     fact.cnsctvo_cnsmo = sender
+#     fact.save()
+
+# post_save.connect(save_consumo, sender= Consumo)
 
 class Facturacion(models.Model):
     cnsctvo_cnsmo = models.ForeignKey('Consumo',on_delete=models.CASCADE)
